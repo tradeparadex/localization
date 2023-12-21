@@ -1,6 +1,4 @@
-# Localization
-
-Translations for the Paradex WebApp
+# Translations for the Paradex WebApp
 
 We use approach similar to `GNU gettext` where keys are written in plain English and used as fallback for missing translations.<br>
 So that separate `id` is not needed, just the `key` string is used with `{{abc}}` for variables and `<1>text<1/>` for React components.<br>
