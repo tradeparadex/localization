@@ -17,6 +17,7 @@ Currently supported languages are:
   ko: '한국어',
   fr: 'Français',
   de: 'Deutsch',
+  pt: 'Português',
   es: 'Español',
   ru: 'Русский',
 ```
