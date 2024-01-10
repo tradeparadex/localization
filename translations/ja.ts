@@ -1,17 +1,21 @@
 import { Keys } from './en';
 
 const translations: Record<Keys, string> = {
+  'Create Your Username': 'ユーザーネームを作成する',
+  'Remind Later': '後でリマインド',
   Portfolio: 'ポートフォリオ',
   Trade: '取引',
   Developers: '開発者',
   Community: 'コミュニティ',
   Environments: '環境',
+  Language: '言語',
   'System Status': 'システムステータス',
   Docs: 'ドキュメント',
   'API Docs': 'APIドキュメント',
   'Code Samples': 'コードサンプル',
   More: 'もっと',
   Stats: '統計',
+  Announcements: 'お知らせ',
   'Join Discord': 'Discordに参加',
   Notifications: '通知',
   'All caught up!': '全て最新の状態です！',
@@ -62,7 +66,7 @@ const translations: Record<Keys, string> = {
   'Spot Oracle Price': 'スポットオラクル価格',
   'Eight hour funding rate that is continuously accrued on positions and settled upon any trade':
     'ポジションに対して継続的に蓄積され、任意の取引で決済される8時間の資金調達率',
-  '8h Funding Rate': '8時間資金調達率',
+  '8h Funding': '8時間の資金調達',
   Limit: '制限',
   LIMIT: '制限',
   Market: '市場',
@@ -153,9 +157,12 @@ const translations: Record<Keys, string> = {
   'By connecting a wallet, you agree to <1>Paradex Terms of Service</1> and represent and warrant to Paradex that you are not a <2>Restricted Person</2>.':
     'ウォレットを接続することで、あなたは<1>Paradexの利用規約</1>に同意し、Paradexに対して<2>制限された人物</2>ではないことを表明および保証します。',
   Wallet: 'ウォレット',
-  Deposit: '預け入れ',
-  Withdraw: '引き出し',
+  Deposit_verb: '預金する',
+  Deposit_noun: '預金',
+  Deposits: '預金',
+  Withdraw: '引き出す',
   Withdrawal: '引き出し',
+  Withdrawals: '引き出し',
   'Collateral Value': '担保価値',
   'Position Notional': 'ポジション名目',
   Collateral: '担保',
@@ -174,7 +181,7 @@ const translations: Record<Keys, string> = {
   'Available on L1': 'L1で利用可能',
   'Deposits are a two-step process. First initiate a deposit from your Ethereum wallet':
     '預け入れは2ステップのプロセスです。まず、あなたのEthereumウォレットから預け入れを開始します',
-  'Deposits are a two-step process. First initiate a deposit from your Ethereum wallet to the Starknet bridge. Second, initiate deposit from the Starknet bridge to Paraclear via the Deposit / Withdraw table. These transactions may take several minutes depending on network conditions. For more information check out our <1>docs</1>.':
+  'Deposits are a two-step process. First initiate a deposit from your Ethereum wallet to the Starknet bridge. Second, initiate deposit from the Starknet bridge to Paraclear via the Deposits / Withdrawals table. These transactions may take several minutes depending on network conditions. For more information check out our <1>docs</1>.':
     '預け入れは2ステップのプロセスです。まず、あなたのEthereumウォレットからStarknetブリッジへの預け入れを開始します。次に、StarknetブリッジからParaclearへの預け入れを、預け入れ/引き出し表を通じて開始します。これらの取引はネットワークの状況により数分かかる場合があります。詳細は<1>ドキュメント</1>をご覧ください。',
   'read more': 'もっと読む',
   'Initiate Deposit to Bridge': 'ブリッジへの預け入れを開始',
@@ -185,7 +192,7 @@ const translations: Record<Keys, string> = {
   'Withdraw initiated': '引き出しが開始されました',
   'Withdrawals are a two-step process. First initiate a withdrawal from Paraclear':
     '引き出しは2ステップのプロセスです。まず、Paraclearからの引き出しを開始します',
-  'Withdrawals are a two-step process. First initiate a withdrawal from Paraclear to the Starknet bridge. This first step can take 2-7 hours. Second, initiate your withdrawal from the Starknet bridge to your Ethereum wallet via the Deposit / Withdraw table. For more information check out our <1>docs</1>.':
+  'Withdrawals are a two-step process. First initiate a withdrawal from Paraclear to the Starknet bridge. This first step can take 2-7 hours. Second, initiate your withdrawal from the Starknet bridge to your Ethereum wallet via the Deposits / Withdrawals table. For more information check out our <1>docs</1>.':
     '引き出しは2ステップのプロセスです。まず、ParaclearからStarknetブリッジへの引き出しを開始します。この最初のステップには2〜7時間かかることがあります。次に、StarknetブリッジからあなたのEthereumウォレットへの引き出しを、預け入れ/引き出し表を通じて開始します。詳細は<1>ドキュメント</1>をご覧ください。',
   'Initiate Withdrawal to Bridge': 'ブリッジへの引き出しを開始',
   'You have no funds to withdraw. It is not possible to withdraw more than your free collateral.':

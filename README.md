@@ -18,4 +18,7 @@ Currently supported languages are:
   pt: 'Português',
   es: 'Español',
   ru: 'Русский',
+  tr: 'Türkçe',
+  nl: 'Nederlands',
+  id: 'Indonesia',
 ```

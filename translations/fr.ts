@@ -1,17 +1,21 @@
 import { Keys } from './en';
 
 const translations: Record<Keys, string> = {
+  'Create Your Username': "Créez votre nom d'utilisateur",
+  'Remind Later': 'Rappeler plus tard',
   Portfolio: 'Portefeuille',
   Trade: 'Commerce',
   Developers: 'Développeurs',
   Community: 'Communauté',
   Environments: 'Environnements',
   'System Status': 'Statut du système',
+  Language: 'Langue',
   Docs: 'Docs',
   'API Docs': 'Docs API',
   'Code Samples': 'Exemples de code',
   More: 'Plus',
   Stats: 'Statistiques',
+  Announcements: 'Annonces',
   'Join Discord': 'Rejoindre Discord',
   Notifications: 'Notifications',
   'All caught up!': 'Tout est à jour!',
@@ -62,7 +66,7 @@ const translations: Record<Keys, string> = {
   'Spot Oracle Price': 'Prix Oracle au comptant',
   'Eight hour funding rate that is continuously accrued on positions and settled upon any trade':
     'Taux de financement de huit heures qui est continuellement accumulé sur les positions et réglé lors de tout échange',
-  '8h Funding Rate': 'Taux de financement de 8h',
+  '8h Funding': 'Financement de 8h',
   Limit: 'Limite',
   LIMIT: 'LIMITE',
   Market: 'Marché',
@@ -153,9 +157,12 @@ const translations: Record<Keys, string> = {
   'By connecting a wallet, you agree to <1>Paradex Terms of Service</1> and represent and warrant to Paradex that you are not a <2>Restricted Person</2>.':
     "En connectant un portefeuille, vous acceptez les <1>Conditions d'utilisation de Paradex</1> et déclarez et garantissez à Paradex que vous n'êtes pas une <2>Personne restreinte</2>.",
   Wallet: 'Portefeuille',
-  Deposit: 'Dépôt',
+  Deposit_verb: 'Déposer',
+  Deposit_noun: 'Dépôt',
+  Deposits: 'Dépôts',
   Withdraw: 'Retirer',
   Withdrawal: 'Retrait',
+  Withdrawals: 'Retraits',
   'Collateral Value': 'Valeur du collatéral',
   'Position Notional': 'Position notionnelle',
   Collateral: 'Collatéral',
@@ -174,8 +181,8 @@ const translations: Record<Keys, string> = {
   'Available on L1': 'Disponible sur L1',
   'Deposits are a two-step process. First initiate a deposit from your Ethereum wallet':
     'Les dépôts sont un processus en deux étapes. Commencez par initier un dépôt depuis votre portefeuille Ethereum',
-  'Deposits are a two-step process. First initiate a deposit from your Ethereum wallet to the Starknet bridge. Second, initiate deposit from the Starknet bridge to Paraclear via the Deposit / Withdraw table. These transactions may take several minutes depending on network conditions. For more information check out our <1>docs</1>.':
-    "Les dépôts sont un processus en deux étapes. Commencez par initier un dépôt depuis votre portefeuille Ethereum vers le pont Starknet. Deuxièmement, initiez le dépôt du pont Starknet à Paraclear via le tableau Dépôt / Retrait. Ces transactions peuvent prendre plusieurs minutes en fonction des conditions du réseau. Pour plus d'informations, consultez nos <1>docs</1>.",
+  'Deposits are a two-step process. First initiate a deposit from your Ethereum wallet to the Starknet bridge. Second, initiate deposit from the Starknet bridge to Paraclear via the Deposits / Withdrawals table. These transactions may take several minutes depending on network conditions. For more information check out our <1>docs</1>.':
+    "Les dépôts sont un processus en deux étapes. Commencez par initier un dépôt depuis votre portefeuille Ethereum vers le pont Starknet. Deuxièmement, initiez le dépôt du pont Starknet à Paraclear via le tableau Dépôts / Retraits. Ces transactions peuvent prendre plusieurs minutes en fonction des conditions du réseau. Pour plus d'informations, consultez nos <1>docs</1>.",
   'read more': 'lire plus',
   'Initiate Deposit to Bridge': 'Initier le dépôt vers le pont',
   'Enable USDC on Paradex': 'Activer USDC sur Paradex',
@@ -185,8 +192,8 @@ const translations: Record<Keys, string> = {
   'Withdraw initiated': 'Retrait initié',
   'Withdrawals are a two-step process. First initiate a withdrawal from Paraclear':
     'Les retraits sont un processus en deux étapes. Commencez par initier un retrait de Paraclear',
-  'Withdrawals are a two-step process. First initiate a withdrawal from Paraclear to the Starknet bridge. This first step can take 2-7 hours. Second, initiate your withdrawal from the Starknet bridge to your Ethereum wallet via the Deposit / Withdraw table. For more information check out our <1>docs</1>.':
-    "Les retraits sont un processus en deux étapes. Commencez par initier un retrait de Paraclear vers le pont Starknet. Cette première étape peut prendre de 2 à 7 heures. Deuxièmement, initiez votre retrait du pont Starknet vers votre portefeuille Ethereum via le tableau Dépôt / Retrait. Pour plus d'informations, consultez nos <1>docs</1>.",
+  'Withdrawals are a two-step process. First initiate a withdrawal from Paraclear to the Starknet bridge. This first step can take 2-7 hours. Second, initiate your withdrawal from the Starknet bridge to your Ethereum wallet via the Deposits / Withdrawals table. For more information check out our <1>docs</1>.':
+    "Les retraits sont un processus en deux étapes. Commencez par initier un retrait de Paraclear vers le pont Starknet. Cette première étape peut prendre de 2 à 7 heures. Deuxièmement, initiez votre retrait du pont Starknet vers votre portefeuille Ethereum via le tableau Dépôts / Retraits. Pour plus d'informations, consultez nos <1>docs</1>.",
   'Initiate Withdrawal to Bridge': 'Initier le retrait vers le pont',
   'You have no funds to withdraw. It is not possible to withdraw more than your free collateral.':
     "Vous n'avez pas de fonds à retirer. Il n'est pas possible de retirer plus que votre collatéral libre.",

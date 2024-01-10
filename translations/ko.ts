@@ -1,17 +1,21 @@
 import { Keys } from './en';
 
 const translations: Record<Keys, string> = {
+  'Create Your Username': '사용자 이름 생성',
+  'Remind Later': '나중에 알림',
   Portfolio: '포트폴리오',
   Trade: '거래',
   Developers: '개발자',
   Community: '커뮤니티',
   Environments: '환경',
+  Language: '언어',
   'System Status': '시스템 상태',
   Docs: '문서',
   'API Docs': 'API 문서',
   'Code Samples': '코드 샘플',
   More: '더보기',
   Stats: '통계',
+  Announcements: '공지',
   'Join Discord': '디스코드 참여',
   Notifications: '알림',
   'All caught up!': '모두 업데이트되었습니다!',
@@ -62,7 +66,7 @@ const translations: Record<Keys, string> = {
   'Spot Oracle Price': '스팟 오라클 가격',
   'Eight hour funding rate that is continuously accrued on positions and settled upon any trade':
     '거래시 정산되는 지속적으로 누적되는 8시간 자금 조달률',
-  '8h Funding Rate': '8시간 자금 조달률',
+  '8h Funding': '8시간 자금',
   Limit: '한도',
   LIMIT: '한도',
   Market: '시장',
@@ -153,9 +157,12 @@ const translations: Record<Keys, string> = {
   'By connecting a wallet, you agree to <1>Paradex Terms of Service</1> and represent and warrant to Paradex that you are not a <2>Restricted Person</2>.':
     '지갑을 연결함으로써, 당신은 <1>Paradex 이용 약관</1>에 동의하며, Paradex에게 당신이 <2>제한된 사람</2>이 아님을 보증합니다.',
   Wallet: '지갑',
-  Deposit: '입금',
-  Withdraw: '출금',
-  Withdrawal: '출금',
+  Deposit_verb: '예금하다',
+  Deposit_noun: '예금',
+  Deposits: '예금',
+  Withdraw: '인출하다',
+  Withdrawal: '인출',
+  Withdrawals: '인출',
   'Collateral Value': '담보 가치',
   'Position Notional': '포지션 명목',
   Collateral: '담보',
@@ -174,7 +181,7 @@ const translations: Record<Keys, string> = {
   'Available on L1': 'L1에서 사용 가능',
   'Deposits are a two-step process. First initiate a deposit from your Ethereum wallet':
     '입금은 두 단계 과정입니다. 먼저 이더리움 지갑에서 입금을 시작하세요',
-  'Deposits are a two-step process. First initiate a deposit from your Ethereum wallet to the Starknet bridge. Second, initiate deposit from the Starknet bridge to Paraclear via the Deposit / Withdraw table. These transactions may take several minutes depending on network conditions. For more information check out our <1>docs</1>.':
+  'Deposits are a two-step process. First initiate a deposit from your Ethereum wallet to the Starknet bridge. Second, initiate deposit from the Starknet bridge to Paraclear via the Deposits / Withdrawals table. These transactions may take several minutes depending on network conditions. For more information check out our <1>docs</1>.':
     '입금은 두 단계 과정입니다. 먼저 이더리움 지갑에서 Starknet 브리지로 입금을 시작합니다. 두 번째로, 입금 / 출금 테이블을 통해 Starknet 브리지에서 Paraclear로 입금을 시작합니다. 이러한 거래는 네트워크 상황에 따라 몇 분 정도 걸릴 수 있습니다. 자세한 정보는 우리의 <1>문서</1>를 확인하세요.',
   'read more': '더 읽기',
   'Initiate Deposit to Bridge': '브리지로 입금 시작',
@@ -185,7 +192,7 @@ const translations: Record<Keys, string> = {
   'Withdraw initiated': '출금 시작됨',
   'Withdrawals are a two-step process. First initiate a withdrawal from Paraclear':
     '출금은 두 단계의 과정입니다. 먼저 Paraclear에서 출금을 시작하세요',
-  'Withdrawals are a two-step process. First initiate a withdrawal from Paraclear to the Starknet bridge. This first step can take 2-7 hours. Second, initiate your withdrawal from the Starknet bridge to your Ethereum wallet via the Deposit / Withdraw table. For more information check out our <1>docs</1>.':
+  'Withdrawals are a two-step process. First initiate a withdrawal from Paraclear to the Starknet bridge. This first step can take 2-7 hours. Second, initiate your withdrawal from the Starknet bridge to your Ethereum wallet via the Deposits / Withdrawals table. For more information check out our <1>docs</1>.':
     '출금은 두 단계의 과정입니다. 먼저 Paraclear에서 Starknet 브리지로 출금을 시작합니다. 이 첫 번째 단계는 2-7시간이 걸릴 수 있습니다. 두 번째로, 입금 / 출금 테이블을 통해 Starknet 브리지에서 이더리움 지갑으로 출금을 시작합니다. 자세한 정보는 우리의 <1>문서</1>를 확인하세요.',
   'Initiate Withdrawal to Bridge': '브리지로 출금 시작',
   'You have no funds to withdraw. It is not possible to withdraw more than your free collateral.':

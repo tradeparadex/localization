@@ -1,17 +1,21 @@
 import { Keys } from './en';
 
 const translations: Record<Keys, string> = {
+  'Create Your Username': '創建您的用戶名',
+  'Remind Later': '稍後提醒',
   Portfolio: '投資組合',
   Trade: '交易',
   Developers: '開發者',
   Community: '社區',
   Environments: '環境',
+  Language: '語言',
   'System Status': '系統狀態',
   Docs: '文件',
   'API Docs': 'API文件',
   'Code Samples': '代碼示例',
   More: '更多',
   Stats: '統計',
+  Announcements: '公告',
   'Join Discord': '加入Discord',
   Notifications: '通知',
   'All caught up!': '全部趕上了！',
@@ -60,7 +64,7 @@ const translations: Record<Keys, string> = {
   'Spot Oracle Price': '現貨甲骨文價格',
   'Eight hour funding rate that is continuously accrued on positions and settled upon any trade':
     '持續累積的八小時資金利率，並在任何交易結算',
-  '8h Funding Rate': '8小時資金利率',
+  '8h Funding': '8小時資金',
   Limit: '限價',
   LIMIT: '限價',
   Market: '市價',
@@ -150,9 +154,12 @@ const translations: Record<Keys, string> = {
   'By connecting a wallet, you agree to <1>Paradex Terms of Service</1> and represent and warrant to Paradex that you are not a <2>Restricted Person</2>.':
     '通過連接錢包，您同意<1>Paradex服務條款</1>，並向Paradex聲明和保證您不是<2>受限人士</2>。',
   Wallet: '錢包',
-  Deposit: '存款',
-  Withdraw: '提款',
-  Withdrawal: '提款',
+  Deposit_verb: '存款',
+  Deposit_noun: '存款',
+  Deposits: '存款',
+  Withdraw: '取款',
+  Withdrawal: '取款',
+  Withdrawals: '取款',
   'Collateral Value': '抵押品價值',
   'Position Notional': '頭寸名義',
   Collateral: '抵押品',
@@ -171,7 +178,7 @@ const translations: Record<Keys, string> = {
   'Available on L1': '在L1上可用',
   'Deposits are a two-step process. First initiate a deposit from your Ethereum wallet':
     '存款是兩步驟的過程。首先從您的以太坊錢包發起存款',
-  'Deposits are a two-step process. First initiate a deposit from your Ethereum wallet to the Starknet bridge. Second, initiate deposit from the Starknet bridge to Paraclear via the Deposit / Withdraw table. These transactions may take several minutes depending on network conditions. For more information check out our <1>docs</1>.':
+  'Deposits are a two-step process. First initiate a deposit from your Ethereum wallet to the Starknet bridge. Second, initiate deposit from the Starknet bridge to Paraclear via the Deposits / Withdrawals table. These transactions may take several minutes depending on network conditions. For more information check out our <1>docs</1>.':
     '存款是兩步驟的過程。首先從您的以太坊錢包發起存款到Starknet橋。其次，通過存款/提款表從Starknet橋發起存款到Paraclear。這些交易可能需要幾分鐘的時間，具體取決於網絡條件。欲了解更多信息，請查看我們的<1>文檔</1>。',
   'read more': '閱讀更多',
   'Initiate Deposit to Bridge': '開始存款到橋',
@@ -182,7 +189,7 @@ const translations: Record<Keys, string> = {
   'Withdraw initiated': '已開始提款',
   'Withdrawals are a two-step process. First initiate a withdrawal from Paraclear':
     '提款是兩步驟的過程。首先從Paraclear開始提款',
-  'Withdrawals are a two-step process. First initiate a withdrawal from Paraclear to the Starknet bridge. This first step can take 2-7 hours. Second, initiate your withdrawal from the Starknet bridge to your Ethereum wallet via the Deposit / Withdraw table. For more information check out our <1>docs</1>.':
+  'Withdrawals are a two-step process. First initiate a withdrawal from Paraclear to the Starknet bridge. This first step can take 2-7 hours. Second, initiate your withdrawal from the Starknet bridge to your Ethereum wallet via the Deposits / Withdrawals table. For more information check out our <1>docs</1>.':
     '提款是兩步驟的過程。首先從Paraclear開始提款到Starknet橋。這第一步可能需要2-7小時。其次，通過存款/提款表從Starknet橋開始將您的提款轉到您的以太坊錢包。欲了解更多信息，請查看我們的<1>文檔</1>。',
   'Initiate Withdrawal to Bridge': '開始提款到橋',
   'You have no funds to withdraw. It is not possible to withdraw more than your free collateral.':

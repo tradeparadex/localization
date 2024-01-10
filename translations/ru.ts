@@ -1,17 +1,21 @@
 import { Keys } from './en';
 
 const translations: Record<Keys, string> = {
+  'Create Your Username': 'Создайте ваше имя пользователя',
+  'Remind Later': 'Напомнить позже',
   Portfolio: 'Портфель',
   Trade: 'Торговля',
   Developers: 'Разработчики',
   Community: 'Сообщество',
   Environments: 'Среды',
+  Language: 'Язык',
   'System Status': 'Состояние системы',
   Docs: 'Документы',
   'API Docs': 'API Документы',
   'Code Samples': 'Примеры кода',
   More: 'Больше',
   Stats: 'Статистика',
+  Announcements: 'Объявления',
   'Join Discord': 'Присоединиться к Discord',
   Notifications: 'Уведомления',
   'All caught up!': 'Все обновления просмотрены!',
@@ -62,7 +66,7 @@ const translations: Record<Keys, string> = {
   'Spot Oracle Price': 'Цена спот-оракула',
   'Eight hour funding rate that is continuously accrued on positions and settled upon any trade':
     'Восьмичасовая ставка финансирования, которая непрерывно начисляется на позиции и урегулирована при любой сделке',
-  '8h Funding Rate': '8ч Ставка финансирования',
+  '8h Funding': '8ч финансирования',
   Limit: 'Лимит',
   LIMIT: 'ЛИМИТ',
   Market: 'Рынок',
@@ -153,9 +157,12 @@ const translations: Record<Keys, string> = {
   'By connecting a wallet, you agree to <1>Paradex Terms of Service</1> and represent and warrant to Paradex that you are not a <2>Restricted Person</2>.':
     'Подключая кошелек, вы соглашаетесь с <1>Условиями использования Paradex</1> и гарантируете Paradex, что вы не являетесь <2>Ограниченным лицом</2>.',
   Wallet: 'Кошелек',
-  Deposit: 'Депозит',
+  Deposit_verb: 'Внести',
+  Deposit_noun: 'Депозит',
+  Deposits: 'Депозиты',
   Withdraw: 'Вывести',
-  Withdrawal: 'Вывод средств',
+  Withdrawal: 'Вывод',
+  Withdrawals: 'Выводы',
   'Collateral Value': 'Значение залога',
   'Position Notional': 'Номинальная позиция',
   Collateral: 'Залог',
@@ -174,8 +181,8 @@ const translations: Record<Keys, string> = {
   'Available on L1': 'Доступно на L1',
   'Deposits are a two-step process. First initiate a deposit from your Ethereum wallet':
     'Депозиты осуществляются в два этапа. Сначала инициируйте депозит из вашего кошелька Ethereum',
-  'Deposits are a two-step process. First initiate a deposit from your Ethereum wallet to the Starknet bridge. Second, initiate deposit from the Starknet bridge to Paraclear via the Deposit / Withdraw table. These transactions may take several minutes depending on network conditions. For more information check out our <1>docs</1>.':
-    'Депозиты осуществляются в два этапа. Сначала инициируйте депозит из вашего кошелька Ethereum на мост Starknet. Во-вторых, инициируйте депозит с моста Starknet в Paraclear через таблицу Депозит / Вывод. Эти транзакции могут занять несколько минут в зависимости от условий сети. Для получения дополнительной информации ознакомьтесь с нашими <1>документами</1>.',
+  'Deposits are a two-step process. First initiate a deposit from your Ethereum wallet to the Starknet bridge. Second, initiate deposit from the Starknet bridge to Paraclear via the Deposits / Withdrawals table. These transactions may take several minutes depending on network conditions. For more information check out our <1>docs</1>.':
+    'Депозиты осуществляются в два этапа. Сначала инициируйте депозит из вашего кошелька Ethereum на мост Starknet. Во-вторых, инициируйте депозит с моста Starknet в Paraclear через таблицу Депозиты / Выводы. Эти транзакции могут занять несколько минут в зависимости от условий сети. Для получения дополнительной информации ознакомьтесь с нашими <1>документами</1>.',
   'read more': 'читать дальше',
   'Initiate Deposit to Bridge': 'Инициировать депозит на мост',
   'Enable USDC on Paradex': 'Включить USDC на Paradex',
@@ -185,8 +192,8 @@ const translations: Record<Keys, string> = {
   'Withdraw initiated': 'Вывод инициирован',
   'Withdrawals are a two-step process. First initiate a withdrawal from Paraclear':
     'Выводы осуществляются в два этапа. Сначала инициируйте вывод из Paraclear',
-  'Withdrawals are a two-step process. First initiate a withdrawal from Paraclear to the Starknet bridge. This first step can take 2-7 hours. Second, initiate your withdrawal from the Starknet bridge to your Ethereum wallet via the Deposit / Withdraw table. For more information check out our <1>docs</1>.':
-    'Выводы осуществляются в два этапа. Сначала инициируйте вывод из Paraclear на мост Starknet. Этот первый шаг может занять 2-7 часов. Во-вторых, инициируйте вывод с моста Starknet в ваш кошелек Ethereum через таблицу Депозит / Вывод. Для получения дополнительной информации ознакомьтесь с нашими <1>документами</1>.',
+  'Withdrawals are a two-step process. First initiate a withdrawal from Paraclear to the Starknet bridge. This first step can take 2-7 hours. Second, initiate your withdrawal from the Starknet bridge to your Ethereum wallet via the Deposits / Withdrawals table. For more information check out our <1>docs</1>.':
+    'Выводы осуществляются в два этапа. Сначала инициируйте вывод из Paraclear на мост Starknet. Этот первый шаг может занять 2-7 часов. Во-вторых, инициируйте вывод с моста Starknet в ваш кошелек Ethereum через таблицу Депозиты / Выводы. Для получения дополнительной информации ознакомьтесь с нашими <1>документами</1>.',
   'Initiate Withdrawal to Bridge': 'Инициировать вывод на мост',
   'You have no funds to withdraw. It is not possible to withdraw more than your free collateral.':
     'У вас нет средств для вывода. Невозможно вывести больше, чем ваше свободное обеспечение.',
