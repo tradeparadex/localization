@@ -1,6 +1,8 @@
 import { Keys } from './en';
 
 const translations: Record<Keys, string> = {
+  'Create Your Username': 'Tạo tên người dùng của bạn',
+  'Remind Later': 'Nhắc lại sau',
   'By connecting a wallet, you agree to <1>Paradex Terms of Service</1> and represent and warrant to Paradex that you are not a <2>Restricted Person</2>.':
     'Bằng cách kết nối ví, bạn đồng ý với <1>Điều Khoản Dịch Vụ của Paradex</1> và đại diện và bảo đảm cho Paradex rằng bạn không phải là một <2>Người bị hạn chế</2>.',
   Positions: 'Vị trí',
@@ -13,12 +15,14 @@ const translations: Record<Keys, string> = {
   Developers: 'Nhà phát triển',
   Community: 'Cộng đồng',
   Environments: 'Môi trường',
+  Language: 'Ngôn ngữ',
   'System Status': 'Trạng thái hệ thống',
   Docs: 'Tài liệu',
   'API Docs': 'Tài liệu API',
   'Code Samples': 'Mẫu mã',
   More: 'Thêm',
   Stats: 'Thống kê',
+  Announcements: 'Thông báo',
   'Join Discord': 'Tham gia Discord',
   Notifications: 'Thông báo',
   'All caught up!': 'Đã cập nhật tất cả!',
@@ -71,7 +75,7 @@ const translations: Record<Keys, string> = {
   'Spot Oracle Price': 'Giá Oracle Spot',
   'Eight hour funding rate that is continuously accrued on positions and settled upon any trade':
     'Tỷ lệ tài trợ 8 giờ liên tục được tích lũy trên các vị trí và được thanh toán khi giao dịch',
-  '8h Funding Rate': 'Tỷ lệ tài trợ 8 giờ',
+  '8h Funding': 'Tỷ lệ tài trợ 8 giờ',
   Limit: 'Giới hạn',
   LIMIT: 'GIỚI HẠN',
   MARKET: 'THỊ TRƯỜNG',
@@ -154,9 +158,12 @@ const translations: Record<Keys, string> = {
   '{{orderSize}} will be closed at Market price':
     '{{orderSize}} sẽ được đóng với giá thị trường',
   Wallet: 'Ví',
-  Deposit: 'Tiền gửi',
-  Withdraw: 'Rút',
+  Deposit_verb: 'Gửi tiền',
+  Deposit_noun: 'Tiền gửi',
+  Deposits: 'Tiền gửi',
+  Withdraw: 'Rút tiền',
   Withdrawal: 'Rút tiền',
+  Withdrawals: 'Rút tiền',
   'Collateral Value': 'Giá trị tài sản thế chấp',
   'Position Notional': 'Định danh vị trí',
   Collateral: 'Tài sản thế chấp',
@@ -175,7 +182,7 @@ const translations: Record<Keys, string> = {
   'Available on L1': 'Có sẵn trên L1',
   'Deposits are a two-step process. First initiate a deposit from your Ethereum wallet':
     'Việc gửi tiền là một quy trình hai bước. Đầu tiên, khởi tạo một khoản tiền gửi từ ví Ethereum của bạn',
-  'Deposits are a two-step process. First initiate a deposit from your Ethereum wallet to the Starknet bridge. Second, initiate deposit from the Starknet bridge to Paraclear via the Deposit / Withdraw table. These transactions may take several minutes depending on network conditions. For more information check out our <1>docs</1>.':
+  'Deposits are a two-step process. First initiate a deposit from your Ethereum wallet to the Starknet bridge. Second, initiate deposit from the Starknet bridge to Paraclear via the Deposits / Withdrawals table. These transactions may take several minutes depending on network conditions. For more information check out our <1>docs</1>.':
     'Việc gửi tiền là một quy trình hai bước. Đầu tiên, khởi tạo một khoản tiền gửi từ ví Ethereum của bạn đến cầu Starknet. Thứ hai, khởi tạo khoản tiền gửi từ cầu Starknet đến Paraclear qua bảng Gửi / Rút tiền. Những giao dịch này có thể mất vài phút tùy thuộc vào điều kiện mạng. Để biết thêm thông tin, hãy xem <1>tài liệu của chúng tôi</1>.',
   'read more': 'đọc thêm',
   'Initiate Deposit to Bridge': 'Khởi tạo gửi tiền đến cầu',
@@ -186,7 +193,7 @@ const translations: Record<Keys, string> = {
   'Withdraw initiated': 'Đã khởi tạo rút tiền',
   'Withdrawals are a two-step process. First initiate a withdrawal from Paraclear':
     'Việc rút tiền là một quy trình hai bước. Đầu tiên, khởi tạo rút tiền từ Paraclear',
-  'Withdrawals are a two-step process. First initiate a withdrawal from Paraclear to the Starknet bridge. This first step can take 2-7 hours. Second, initiate your withdrawal from the Starknet bridge to your Ethereum wallet via the Deposit / Withdraw table. For more information check out our <1>docs</1>.':
+  'Withdrawals are a two-step process. First initiate a withdrawal from Paraclear to the Starknet bridge. This first step can take 2-7 hours. Second, initiate your withdrawal from the Starknet bridge to your Ethereum wallet via the Deposits / Withdrawals table. For more information check out our <1>docs</1>.':
     'Việc rút tiền là một quy trình hai bước. Đầu tiên, khởi tạo rút tiền từ Paraclear đến cầu Starknet. Bước đầu tiên này có thể mất từ 2-7 giờ. Thứ hai, khởi tạo rút tiền của bạn từ cầu Starknet đến ví Ethereum của bạn qua bảng Gửi / Rút tiền. Để biết thêm thông tin, hãy xem <1>tài liệu của chúng tôi</1>.',
   'Initiate Withdrawal to Bridge': 'Khởi tạo rút tiền đến cầu',
   'You have no funds to withdraw. It is not possible to withdraw more than your free collateral.':

@@ -5,17 +5,21 @@
  */
 
 const keys = [
+  'Create Your Username',
+  'Remind Later',
   'Portfolio',
   'Trade',
   'Developers',
   'Community',
   'Environments',
+  'Language',
   'System Status',
   'Docs',
   'API Docs',
   'Code Samples',
   'More',
   'Stats',
+  'Announcements',
   'Join Discord',
   'Notifications',
   'All caught up!',
@@ -59,7 +63,7 @@ const keys = [
   'Mark Price',
   'Spot Oracle Price',
   'Eight hour funding rate that is continuously accrued on positions and settled upon any trade',
-  '8h Funding Rate',
+  '8h Funding',
   'Limit',
   'LIMIT',
   'Market',
@@ -143,9 +147,12 @@ const keys = [
   '{{orderSize}} will be closed at Market price',
   'By connecting a wallet, you agree to <1>Paradex Terms of Service</1> and represent and warrant to Paradex that you are not a <2>Restricted Person</2>.',
   'Wallet',
-  'Deposit',
+  'Deposit_verb',
+  'Deposit_noun',
+  'Deposits',
   'Withdraw',
   'Withdrawal',
+  'Withdrawals',
   'Collateral Value',
   'Position Notional',
   'Collateral',
@@ -161,7 +168,7 @@ const keys = [
   'It is not possible to deposit more than your current balance.',
   'Available on L1',
   'Deposits are a two-step process. First initiate a deposit from your Ethereum wallet',
-  'Deposits are a two-step process. First initiate a deposit from your Ethereum wallet to the Starknet bridge. Second, initiate deposit from the Starknet bridge to Paraclear via the Deposit / Withdraw table. These transactions may take several minutes depending on network conditions. For more information check out our <1>docs</1>.',
+  'Deposits are a two-step process. First initiate a deposit from your Ethereum wallet to the Starknet bridge. Second, initiate deposit from the Starknet bridge to Paraclear via the Deposits / Withdrawals table. These transactions may take several minutes depending on network conditions. For more information check out our <1>docs</1>.',
   'read more',
   'Initiate Deposit to Bridge',
   'Enable USDC on Paradex',
@@ -169,7 +176,7 @@ const keys = [
   'Enable USDC',
   'Withdraw initiated',
   'Withdrawals are a two-step process. First initiate a withdrawal from Paraclear',
-  'Withdrawals are a two-step process. First initiate a withdrawal from Paraclear to the Starknet bridge. This first step can take 2-7 hours. Second, initiate your withdrawal from the Starknet bridge to your Ethereum wallet via the Deposit / Withdraw table. For more information check out our <1>docs</1>.',
+  'Withdrawals are a two-step process. First initiate a withdrawal from Paraclear to the Starknet bridge. This first step can take 2-7 hours. Second, initiate your withdrawal from the Starknet bridge to your Ethereum wallet via the Deposits / Withdrawals table. For more information check out our <1>docs</1>.',
   'Initiate Withdrawal to Bridge',
   'You have no funds to withdraw. It is not possible to withdraw more than your free collateral.',
   'It is not possible to withdraw more than your free collateral.',
@@ -256,9 +263,11 @@ const keys = [
 type Keys = typeof keys[number];
 type Translations = { [K in Keys]: K };
 
-const translations: Translations = Object.fromEntries(
-  keys.map((key) => [key, key]),
-) as Translations;
+const translations = {
+  ...(Object.fromEntries(keys.map((key) => [key, key])) as Translations),
+  Deposit_verb: 'Deposit',
+  Deposit_noun: 'Deposit',
+} as const;
 
 export type { Keys };
 export default translations;
