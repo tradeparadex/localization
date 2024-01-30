@@ -5,11 +5,26 @@
  */
 
 const keys = [
+  'Maker Score',
+  'LP Score',
+  'LP Points Share',
+  'Fee Score',
+  'Score Share',
+  'Instrument Share',
+  'Trader Points Share',
+  'Trader Points',
+  'Liquidity Provider Points',
+  'Points',
+  'Points Overview',
+  'Total Points',
+  'LP Points',
+  '24h Change',
+  'Leaderboard',
   'Create Your Username',
   'Remind Later',
   'Portfolio',
   'Trade',
-  'Developers',
+  'Build',
   'Community',
   'Environments',
   'Language',
@@ -258,6 +273,7 @@ const keys = [
   'You do not have access to the platform. Please join our Discord to get access.',
   'Ethereum Wallet Connected',
   'Incorrect network selected "{{actualChainName}}". Please change the network to "{{requiredChainName}}" (id={{requiredChainId}}) in your wallet and retry.',
+  'Blocked Ethereum Address',
 ] as const;
 
 type Keys = typeof keys[number];
@@ -270,4 +286,5 @@ const translations = {
 } as const;
 
 export type { Keys };
+export type TranslationResources = typeof translations;
 export default translations;
