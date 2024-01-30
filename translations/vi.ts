@@ -1,6 +1,21 @@
 import { Keys } from './en';
 
 const translations: Record<Keys, string> = {
+  'Maker Score': 'Điểm Maker',
+  'LP Score': 'Điểm LP',
+  'LP Points Share': 'Tỷ lệ Điểm LP',
+  'Fee Score': 'Điểm Phí',
+  'Score Share': 'Tỷ lệ Điểm',
+  'Instrument Share': 'Tỷ lệ Công cụ',
+  'Trader Points Share': 'Tỷ lệ Điểm Trader',
+  'Trader Points': 'Điểm Trader',
+  'Liquidity Provider Points': 'Điểm Nhà Cung Cấp Thanh khoản',
+  Points: 'Điểm',
+  'Points Overview': 'Tổng quan Điểm',
+  'Total Points': 'Tổng Điểm',
+  'LP Points': 'Điểm LP',
+  '24h Change': 'Thay đổi 24h',
+  Leaderboard: 'Bảng dẫn đầu',
   'Create Your Username': 'Tạo tên người dùng của bạn',
   'Remind Later': 'Nhắc lại sau',
   'By connecting a wallet, you agree to <1>Paradex Terms of Service</1> and represent and warrant to Paradex that you are not a <2>Restricted Person</2>.':
@@ -12,7 +27,7 @@ const translations: Record<Keys, string> = {
   'Funding Payments': 'Thanh toán tài trợ',
   Portfolio: 'Danh mục đầu tư',
   Trade: 'Buôn bán',
-  Developers: 'Nhà phát triển',
+  Build: 'Xây dựng',
   Community: 'Cộng đồng',
   Environments: 'Môi trường',
   Language: 'Ngôn ngữ',
@@ -262,6 +277,7 @@ const translations: Record<Keys, string> = {
   'Invalid Price Precision': 'Độ chính xác giá không hợp lệ',
   'Invalid Token': 'Token không hợp lệ',
   'Invalid Ethereum Address': 'Địa chỉ Ethereum không hợp lệ',
+  'Blocked Ethereum Address': 'Địa chỉ Ethereum đã bị chặn',
   'Invalid Ethereum Signature': 'Chữ ký Ethereum không hợp lệ',
   'Invalid Starknet Address': 'Địa chỉ Starknet không hợp lệ',
   'Invalid Starknet Signature': 'Chữ ký Starknet không hợp lệ',

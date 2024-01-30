@@ -1,6 +1,21 @@
 import { Keys } from './en';
 
 const translations: Record<Keys, string> = {
+  'Maker Score': '做市商评分',
+  'LP Score': '流动性提供者评分',
+  'LP Points Share': 'LP 积分占比',
+  'Fee Score': '手续费评分',
+  'Score Share': '积分占比',
+  'Instrument Share': '合约占比',
+  'Trader Points Share': '交易者积分占比',
+  'Trader Points': '交易者积分',
+  'Liquidity Provider Points': '流动性提供者积分',
+  Points: '积分',
+  'Points Overview': '积分概览',
+  'Total Points': '总积分',
+  'LP Points': 'LP 积分',
+  '24h Change': '24小时变化',
+  Leaderboard: '排行榜',
   'Create Your Username': '创建您的用户名',
   'Remind Later': '稍后提醒',
   'By connecting a wallet, you agree to <1>Paradex Terms of Service</1> and represent and warrant to Paradex that you are not a <2>Restricted Person</2>.':
@@ -12,7 +27,7 @@ const translations: Record<Keys, string> = {
   'Funding Payments': '资金支付',
   Portfolio: '投资组合',
   Trade: '交易',
-  Developers: '开发者',
+  Build: '构建',
   Community: '社区',
   Environments: '环境',
   Language: '语言',
@@ -257,6 +272,7 @@ const translations: Record<Keys, string> = {
   'Invalid Price Precision': '价格精度无效',
   'Invalid Token': '无效的令牌',
   'Invalid Ethereum Address': '以太坊地址无效',
+  'Blocked Ethereum Address': '以太坊地址被阻止',
   'Invalid Ethereum Signature': '以太坊签名无效',
   'Invalid Starknet Address': 'Starknet地址无效',
   'Invalid Starknet Signature': 'Starknet签名无效',
