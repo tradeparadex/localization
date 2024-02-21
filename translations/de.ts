@@ -1,7 +1,28 @@
 import { Keys } from './en';
 
 const translations: Record<Keys, string> = {
-  'Maker Score': 'Maker-Wertung',
+  'Estimated Receivable Amount': 'Geschätzter Empfangsbetrag',
+  'Socialized Loss active. Click to learn more.':
+    'Sozialisierter Verlust aktiv. Klicken Sie, um mehr zu erfahren.',
+  Analytics: 'Analytik',
+  'Sign In to see your account Points stats':
+    'Melden Sie sich an, um Ihre Kontopunktestatistiken zu sehen',
+  '<1>Clock Is Out Of Sync</1> The clock on your device is out of sync. This may cause issues with the application. Please make sure your device clock is set to be auto. For more details please <2>see documentation</2>':
+    '<1>Clock Is Out Of Sync</1> Die Uhr auf Ihrem Gerät ist nicht synchron. Dies kann Probleme mit der Anwendung verursachen. Bitte stellen Sie sicher, dass die Uhr Ihres Geräts auf automatisch eingestellt ist. Weitere Informationen finden Sie in der <2>Dokumentation</2>',
+  'Failed to fetch max withdrawable amount':
+    'Fehler beim Abrufen des maximalen Auszahlungsbetrags',
+  'It is not possible to withdraw more than your Max Withdrawable Amount.':
+    'Es ist nicht möglich, mehr als Ihren maximalen Auszahlungsbetrag abzuheben.',
+  'Max Withdrawable Amount': 'Maximaler Auszahlungsbetrag',
+  'Points Explainer': 'Punkte-Erklärung',
+  Pool: 'Stufe',
+  'Quote Quality': 'Kursqualität',
+  'Create Your Public Username': 'Öffentlichen Benutzernamen erstellen',
+  'Edit Your Public Username': 'Öffentlichen Benutzernamen bearbeiten',
+  Trader: 'Trader',
+  LP: 'LP',
+  'You have been signed out.': 'Sie wurden abgemeldet.',
+  'Maker Volume Score': 'Maker Volumen Score',
   'LP Score': 'LP-Wertung',
   'LP Points Share': 'LP-Punkteanteil',
   'Fee Score': 'Gebührenwertung',
@@ -9,15 +30,14 @@ const translations: Record<Keys, string> = {
   'Instrument Share': 'Instrumentenanteil',
   'Trader Points Share': 'Trader-Punkteanteil',
   'Trader Points': 'Trader-Punkte',
-  'Liquidity Provider Points': 'Liquiditätsanbieter-Punkte',
+  'Liquidity Provider(LP) Points': 'Liquiditätsanbieter-Punkte(LP)',
   Points: 'Punkte',
   'Points Overview': 'Punkteübersicht',
   'Total Points': 'Gesamtpunkte',
   'LP Points': 'LP-Punkte',
   '24h Change': '24h Änderung',
   Leaderboard: 'Rangliste',
-  'Create Your Username': 'Erstellen Sie Ihren Benutzernamen',
-  'Remind Later': 'Später erinnern',
+  Cancel: 'Abbrechen',
   Portfolio: 'Portfolio',
   Trade: 'Handel',
   Build: 'Erstellen',
@@ -37,8 +57,11 @@ const translations: Record<Keys, string> = {
   'You have no new notifications': 'Sie haben keine neuen Benachrichtigungen',
   'Display Toast Notifications': 'Toast-Benachrichtigungen anzeigen',
   'Connect Wallet': 'Wallet verbinden',
+  'WalletConnect is taking too long to open. Please refresh the page and try again.':
+    'WalletConnect benötigt zu lange zum Öffnen. Bitte aktualisieren Sie die Seite und versuchen Sie es erneut.',
+  'Unexpected error opening WalletConnect modal. Please refresh the page and try again.':
+    'Unerwarteter Fehler beim Öffnen des WalletConnect-Modals. Bitte aktualisieren Sie die Seite und versuchen Sie es erneut.',
   'Connect your Wallet': 'Verbinden Sie Ihre Wallet',
-  'Choose Wallet': 'Wallet auswählen',
   'Link Wallet': 'Wallet verlinken',
   'You will receive a signature request. Signing is free and will not send a transaction.':
     'Sie erhalten eine Signaturanforderung. Die Signatur ist kostenlos und sendet keine Transaktion.',
@@ -58,7 +81,6 @@ const translations: Record<Keys, string> = {
   Edit: 'Bearbeiten',
   'Your username is now hidden. It is not visible to other users.':
     'Ihr Benutzername ist jetzt verborgen. Er ist für andere Benutzer nicht sichtbar.',
-  'Edit Your Username': 'Bearbeiten Sie Ihren Benutzernamen',
   'Your username will be visible to other users unless you choose to hide it. You can always change it later.':
     'Ihr Benutzername wird für andere Benutzer sichtbar sein, es sei denn, Sie entscheiden sich dafür, ihn zu verbergen. Sie können ihn jederzeit später ändern.',
   'Hide my Username': 'Meinen Benutzernamen verbergen',
@@ -84,15 +106,20 @@ const translations: Record<Keys, string> = {
     'Achtstündige Finanzierungsrate, die kontinuierlich auf Positionen anfällt und bei jedem Handel abgerechnet wird',
   '8h Funding': '8h Finanzierung',
   Limit: 'Limit',
-  LIMIT: 'LIMIT',
   Market: 'Markt',
-  MARKET: 'MARKT',
+  'Stop Limit': 'Stop-Limit',
+  'Stop Market': 'Stop-Market',
+  'Trigger Price': 'Auslösepreis',
   'Limit Price': 'Limitpreis',
   Amount: 'Menge',
+  'Reduce Only': 'Nur reduzieren',
+  'Reduce Only will increase position': 'Reduce Only wird die Position erhöhen',
   'Your order stays open until it is filled or you decide to cancel.':
     'Ihre Bestellung bleibt offen, bis sie ausgeführt oder von Ihnen storniert wird.',
   'Your order gets filled right away, partially or fully, and whatever is left gets canceled instantly.':
     'Ihre Bestellung wird sofort teilweise oder vollständig ausgeführt und der Rest wird sofort storniert.',
+  'Conditional limit order that serves to add liquidity to the order book as a Maker order.':
+    'Bedingte Limitorder, die dazu dient, Liquidität zum Orderbuch als Maker-Order hinzuzufügen.',
   Fee: 'Gebühr',
   'Currently the fees are fixed and uniform across the platform. Maker {{makerFee}} / Taker {{takerFee}}':
     'Derzeit sind die Gebühren auf der gesamten Plattform fest und einheitlich. Maker {{makerFee}} / Taker {{takerFee}}',
@@ -129,6 +156,7 @@ const translations: Record<Keys, string> = {
   'Funding Payments': 'Finanzierungszahlungen',
   Side: 'Seite',
   'Entry Price': 'Einstiegspreis',
+  'Liquidation Price': 'Liquidationspreis',
   'Unrealized Funding': 'Nicht realisierte Finanzierung',
   'Close Position': 'Position schließen',
   Type: 'Typ',
@@ -236,8 +264,8 @@ const translations: Record<Keys, string> = {
   'Deposit to Paraclear available': 'Einzahlung auf Paraclear verfügbar',
   'Go to Deposits': 'Zu Einzahlungen gehen',
   'Deposit to Paraclear in progress': 'Einzahlung auf Paraclear in Bearbeitung',
-  '<1>Paradex Closed Beta</1> This is a CLOSED BETA version of Paradex, the product is still being tested and can be subject to bugs and errors. For more details please read carefully the <2>Paradex terms of service</2> & <3>documentation</3>.':
-    '<1>Paradex Geschlossene Beta</1> Dies ist eine GESCHLOSSENE BETA-Version von Paradex, das Produkt wird noch getestet und kann Fehler und Probleme aufweisen. Für weitere Details lesen Sie bitte die <2>Paradex-Nutzungsbedingungen</2> & <3>Dokumentation</3> sorgfältig durch.',
+  '<1>Paradex Beta</1> This is a Beta version of Paradex, the product is still being tested and can be subject to bugs and errors. For more details please read carefully the <2>Paradex terms of service</2> & <3>documentation</3>.':
+    '<1>Paradex Beta</1> Dies ist eine Beta-Version von Paradex, das Produkt wird noch getestet und kann fehlerhaft sein. Für weitere Details lesen Sie bitte sorgfältig die <2>Paradex-Nutzungsbedingungen</2> & <3>Dokumentation</3>.',
   'Limit {{side}} Order Fill': 'Limit {{side}} Orderausführung',
   '{{type}} {{side}} Order Submitted': '{{type}} {{side}} Auftrag eingereicht',
   '{{type}} {{side}} Order Canceled': '{{type}} {{side}} Auftrag storniert',

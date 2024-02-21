@@ -1,7 +1,28 @@
 import { Keys } from './en';
 
 const translations: Record<Keys, string> = {
-  'Maker Score': 'Puntuación Maker',
+  'Estimated Receivable Amount': 'Cantidad estimada a recibir',
+  'Socialized Loss active. Click to learn more.':
+    'Pérdida socializada activa. Haz clic para obtener más información.',
+  Analytics: 'Analítica',
+  'Sign In to see your account Points stats':
+    'Inicia sesión para ver las estadísticas de tus puntos de cuenta',
+  '<1>Clock Is Out Of Sync</1> The clock on your device is out of sync. This may cause issues with the application. Please make sure your device clock is set to be auto. For more details please <2>see documentation</2>':
+    '<1>El reloj está fuera de sincronización</1> El reloj de su dispositivo está fuera de sincronización. Esto puede causar problemas con la aplicación. Por favor, asegúrese de que el reloj de su dispositivo esté configurado para ser automático. Para más detalles, por favor <2>consulte la documentación</2>',
+  'Failed to fetch max withdrawable amount':
+    'Error al obtener la cantidad máxima de retiro',
+  'It is not possible to withdraw more than your Max Withdrawable Amount.':
+    'No es posible retirar más de su Cantidad Máxima de Retiro.',
+  'Max Withdrawable Amount': 'Cantidad Máxima de Retiro',
+  'Points Explainer': 'Explicador de Puntos',
+  Pool: 'Nivel',
+  'Quote Quality': 'Calidad de la cotización',
+  'Create Your Public Username': 'Crear su nombre de usuario público',
+  'Edit Your Public Username': 'Editar su nombre de usuario público',
+  Trader: 'Trader',
+  LP: 'LP',
+  'You have been signed out.': 'Has cerrado sesión.',
+  'Maker Volume Score': 'Volumen Del Maker Score',
   'LP Score': 'Puntuación LP',
   'LP Points Share': 'Porcentaje de Puntos LP',
   'Fee Score': 'Puntuación de Comisiones',
@@ -9,15 +30,14 @@ const translations: Record<Keys, string> = {
   'Instrument Share': 'Porcentaje de Instrumento',
   'Trader Points Share': 'Porcentaje de Puntos Trader',
   'Trader Points': 'Puntos Trader',
-  'Liquidity Provider Points': 'Puntos de Proveedor de Liquidez',
+  'Liquidity Provider(LP) Points': 'Puntos de Proveedor de Liquidez(LP)',
   Points: 'Puntos',
   'Points Overview': 'Resumen de Puntos',
   'Total Points': 'Puntos Totales',
   'LP Points': 'Puntos LP',
   '24h Change': 'Cambio en 24h',
   Leaderboard: 'Tabla de clasificación',
-  'Create Your Username': 'Crea tu nombre de usuario',
-  'Remind Later': 'Recordar más tarde',
+  Cancel: 'Cancelar',
   Portfolio: 'Portafolio',
   Trade: 'Comercio',
   Build: 'Construir',
@@ -37,8 +57,11 @@ const translations: Record<Keys, string> = {
   'You have no new notifications': 'No tienes nuevas notificaciones',
   'Display Toast Notifications': 'Mostrar Notificaciones Toast',
   'Connect Wallet': 'Conectar Billetera',
+  'WalletConnect is taking too long to open. Please refresh the page and try again.':
+    'WalletConnect está tardando demasiado en abrirse. Por favor, actualiza la página e inténtalo de nuevo.',
+  'Unexpected error opening WalletConnect modal. Please refresh the page and try again.':
+    'Error inesperado al abrir el modal de WalletConnect. Por favor, actualiza la página e inténtalo de nuevo.',
   'Connect your Wallet': 'Conecta tu Billetera',
-  'Choose Wallet': 'Elige Billetera',
   'Link Wallet': 'Enlazar Billetera',
   'You will receive a signature request. Signing is free and will not send a transaction.':
     'Recibirás una solicitud de firma. Firmar es gratis y no enviará una transacción.',
@@ -57,7 +80,6 @@ const translations: Record<Keys, string> = {
   Edit: 'Editar',
   'Your username is now hidden. It is not visible to other users.':
     'Su nombre de usuario ahora está oculto. No es visible para otros usuarios.',
-  'Edit Your Username': 'Editar su nombre de usuario',
   'Your username will be visible to other users unless you choose to hide it. You can always change it later.':
     'Su nombre de usuario será visible para otros usuarios a menos que elija ocultarlo. Siempre puedes cambiarlo más tarde.',
   'Hide my Username': 'Ocultar mi nombre de usuario',
@@ -83,15 +105,20 @@ const translations: Record<Keys, string> = {
     'Tasa de financiación de ocho horas que se acumula continuamente en las posiciones y se liquida en cualquier operación',
   '8h Funding': 'Financiamiento de 8h',
   Limit: 'Límite',
-  LIMIT: 'LÍMITE',
   Market: 'Mercado',
-  MARKET: 'MERCADO',
+  'Stop Limit': 'Stop Límite',
+  'Stop Market': 'Stop de Mercado',
+  'Trigger Price': 'Precio de Activación',
   'Limit Price': 'Precio límite',
   Amount: 'Cantidad',
+  'Reduce Only': 'Solo Reducción',
+  'Reduce Only will increase position': 'Reduce Only aumentará la posición',
   'Your order stays open until it is filled or you decide to cancel.':
     'Su orden permanece abierta hasta que se complete o decida cancelarla.',
   'Your order gets filled right away, partially or fully, and whatever is left gets canceled instantly.':
     'Su orden se completa de inmediato, parcial o totalmente, y lo que queda se cancela instantáneamente.',
+  'Conditional limit order that serves to add liquidity to the order book as a Maker order.':
+    'Orden límite condicional que sirve para agregar liquidez al libro de órdenes como una orden de Maker.',
   Fee: 'Tarifa',
   'Currently the fees are fixed and uniform across the platform. Maker {{makerFee}} / Taker {{takerFee}}':
     'Actualmente, las tarifas son fijas y uniformes en toda la plataforma. Creador {{makerFee}} / Tomador {{takerFee}}',
@@ -128,6 +155,7 @@ const translations: Record<Keys, string> = {
   'Funding Payments': 'Pagos de financiación',
   Side: 'Lado',
   'Entry Price': 'Precio de entrada',
+  'Liquidation Price': 'Precio de Liquidación',
   'Unrealized Funding': 'Financiación no realizada',
   'Close Position': 'Cerrar posición',
   Type: 'Tipo',
@@ -234,8 +262,8 @@ const translations: Record<Keys, string> = {
   'Deposit to Paraclear available': 'Depósito a Paraclear disponible',
   'Go to Deposits': 'Ir a Depósitos',
   'Deposit to Paraclear in progress': 'Depósito a Paraclear en progreso',
-  '<1>Paradex Closed Beta</1> This is a CLOSED BETA version of Paradex, the product is still being tested and can be subject to bugs and errors. For more details please read carefully the <2>Paradex terms of service</2> & <3>documentation</3>.':
-    '<1>Paradex Beta Cerrada</1> Esta es una versión BETA CERRADA de Paradex, el producto aún se está probando y puede estar sujeto a errores y fallos. Para más detalles, por favor lee cuidadosamente los <2>términos de servicio de Paradex</2> y la <3>documentación</3>.',
+  '<1>Paradex Beta</1> This is a Beta version of Paradex, the product is still being tested and can be subject to bugs and errors. For more details please read carefully the <2>Paradex terms of service</2> & <3>documentation</3>.':
+    '<1>Paradex Beta</1> Esta es una versión Beta de Paradex, el producto aún está siendo probado y puede estar sujeto a errores y fallos. Para más detalles, por favor lee cuidadosamente los <2>términos de servicio de Paradex</2> y la <3>documentación</3>.',
   'Limit {{side}} Order Fill': 'Límite {{side}} Orden Completada',
   '{{type}} {{side}} Order Submitted': '{{type}} {{side}} Orden Enviada',
   '{{type}} {{side}} Order Canceled': '{{type}} {{side}} Orden Cancelada',

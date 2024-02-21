@@ -1,7 +1,28 @@
 import { Keys } from './en';
 
 const translations: Record<Keys, string> = {
-  'Maker Score': 'Skor Maker',
+  'Estimated Receivable Amount': 'Jumlah yang Diperkirakan Diterima',
+  'Socialized Loss active. Click to learn more.':
+    'Kerugian Sosialisasi aktif. Klik untuk mempelajari lebih lanjut.',
+  Analytics: 'Analitik',
+  'Sign In to see your account Points stats':
+    'Masuk untuk melihat statistik poin akun Anda',
+  '<1>Clock Is Out Of Sync</1> The clock on your device is out of sync. This may cause issues with the application. Please make sure your device clock is set to be auto. For more details please <2>see documentation</2>':
+    'Jam di perangkat Anda tidak sinkron. Ini dapat menyebabkan masalah dengan aplikasi. Pastikan jam perangkat Anda diatur ke otomatis. Untuk informasi lebih lanjut, silakan <2>lihat dokumentasi</2>',
+  'Failed to fetch max withdrawable amount':
+    'Gagal mengambil jumlah penarikan maksimum',
+  'It is not possible to withdraw more than your Max Withdrawable Amount.':
+    'Tidak dapat menarik lebih dari Jumlah Penarikan Maksimum Anda.',
+  'Max Withdrawable Amount': 'Jumlah Penarikan Maksimum',
+  'Points Explainer': 'Penjelas Poin',
+  Pool: 'Tingkatan',
+  'Quote Quality': 'Kualitas kutipan',
+  'Create Your Public Username': 'Buat Nama Pengguna Publik Anda',
+  'Edit Your Public Username': 'Edit Nama Pengguna Publik Anda',
+  Trader: 'Trader',
+  LP: 'LP',
+  'You have been signed out.': 'Anda telah keluar.',
+  'Maker Volume Score': 'Skor Volume Pembuat',
   'LP Score': 'Skor LP',
   'LP Points Share': 'Pembagian Poin LP',
   'Fee Score': 'Skor Biaya',
@@ -9,15 +30,14 @@ const translations: Record<Keys, string> = {
   'Instrument Share': 'Pembagian Instrumen',
   'Trader Points Share': 'Pembagian Poin Trader',
   'Trader Points': 'Poin Trader',
-  'Liquidity Provider Points': 'Poin Penyedia Likuiditas',
+  'Liquidity Provider(LP) Points': 'Poin Penyedia Likuiditas(LP)',
   Points: 'Poin',
   'Points Overview': 'Tinjauan Poin',
   'Total Points': 'Total Poin',
   'LP Points': 'Poin LP',
   '24h Change': 'Perubahan 24h',
   Leaderboard: 'Papan peringkat',
-  'Create Your Username': 'Buat Nama Pengguna Anda',
-  'Remind Later': 'Ingatkan nanti',
+  Cancel: 'Batal',
   Portfolio: 'Portofolio',
   Trade: 'Perdagangan',
   Build: 'Membangun',
@@ -37,8 +57,11 @@ const translations: Record<Keys, string> = {
   'You have no new notifications': 'Anda tidak memiliki notifikasi baru',
   'Display Toast Notifications': 'Tampilkan Notifikasi Toast',
   'Connect Wallet': 'Hubungkan Dompet',
+  'WalletConnect is taking too long to open. Please refresh the page and try again.':
+    'WalletConnect memerlukan waktu terlalu lama untuk dibuka. Silakan refresh halaman dan coba lagi.',
+  'Unexpected error opening WalletConnect modal. Please refresh the page and try again.':
+    'Kesalahan tak terduga saat membuka modal WalletConnect. Silakan refresh halaman dan coba lagi.',
   'Connect your Wallet': 'Hubungkan Dompet Anda',
-  'Choose Wallet': 'Pilih Dompet',
   'Link Wallet': 'Tautkan Dompet',
   'You will receive a signature request. Signing is free and will not send a transaction.':
     'Anda akan menerima permintaan tanda tangan. Menandatangani gratis dan tidak akan mengirim transaksi.',
@@ -57,7 +80,6 @@ const translations: Record<Keys, string> = {
   Edit: 'Ubah',
   'Your username is now hidden. It is not visible to other users.':
     'Nama pengguna Anda sekarang disembunyikan. Ini tidak terlihat oleh pengguna lain.',
-  'Edit Your Username': 'Ubah Nama Pengguna Anda',
   'Your username will be visible to other users unless you choose to hide it. You can always change it later.':
     'Nama pengguna Anda akan terlihat oleh pengguna lain kecuali Anda memilih untuk menyembunyikannya. Anda selalu dapat mengubahnya nanti.',
   'Hide my Username': 'Sembunyikan Nama Pengguna Saya',
@@ -83,15 +105,20 @@ const translations: Record<Keys, string> = {
     'Tingkat pendanaan delapan jam yang terus-menerus terakumulasi pada posisi dan diselesaikan setelah setiap perdagangan',
   '8h Funding': 'Pendanaan 8 jam',
   Limit: 'Batas',
-  LIMIT: 'BATAS',
   Market: 'Pasar',
-  MARKET: 'PASAR',
+  'Stop Limit': 'Stop Limit',
+  'Stop Market': 'Stop Pasar',
+  'Trigger Price': 'Harga Pemicu',
   'Limit Price': 'Harga Batas',
   Amount: 'Jumlah',
+  'Reduce Only': 'Hanya Kurang',
+  'Reduce Only will increase position': 'Reduce Only akan meningkatkan posisi',
   'Your order stays open until it is filled or you decide to cancel.':
     'Pesanan Anda tetap terbuka sampai terisi atau Anda memutuskan untuk membatalkan.',
   'Your order gets filled right away, partially or fully, and whatever is left gets canceled instantly.':
     'Pesanan Anda langsung terisi, sebagian atau seluruhnya, dan apa pun yang tersisa langsung dibatalkan.',
+  'Conditional limit order that serves to add liquidity to the order book as a Maker order.':
+    'Pesanan batas bersyarat yang berfungsi untuk menambah likuiditas ke buku pesanan sebagai pesanan Maker.',
   Fee: 'Biaya',
   'Currently the fees are fixed and uniform across the platform. Maker {{makerFee}} / Taker {{takerFee}}':
     'Saat ini biaya tetap dan seragam di seluruh platform. Pembuat {{makerFee}} / Pengambil {{takerFee}}',
@@ -128,6 +155,7 @@ const translations: Record<Keys, string> = {
   'Funding Payments': 'Pembayaran Pendanaan',
   Side: 'Sisi',
   'Entry Price': 'Harga Masuk',
+  'Liquidation Price': 'Harga Likuidasi',
   'Unrealized Funding': 'Pendanaan yang Belum Terealisasi',
   'Close Position': 'Tutup Posisi',
   Type: 'Tipe',
@@ -234,8 +262,8 @@ const translations: Record<Keys, string> = {
   'Deposit to Paraclear available': 'Setoran ke Paraclear tersedia',
   'Go to Deposits': 'Pergi ke Setoran',
   'Deposit to Paraclear in progress': 'Setoran ke Paraclear sedang berlangsung',
-  '<1>Paradex Closed Beta</1> This is a CLOSED BETA version of Paradex, the product is still being tested and can be subject to bugs and errors. For more details please read carefully the <2>Paradex terms of service</2> & <3>documentation</3>.':
-    '<1>Paradex Closed Beta</1> Ini adalah versi BETA TERTUTUP dari Paradex, produk masih dalam pengujian dan dapat mengalami bug dan kesalahan. Untuk lebih jelasnya, silakan baca dengan saksama <2>syarat layanan Paradex</2> & <3>dokumentasi</3>.',
+  '<1>Paradex Beta</1> This is a Beta version of Paradex, the product is still being tested and can be subject to bugs and errors. For more details please read carefully the <2>Paradex terms of service</2> & <3>documentation</3>.':
+    '<1>Paradex Beta</1> Ini adalah versi Beta Paradex, produk ini masih diuji dan dapat mengalami bug dan kesalahan. Untuk informasi lebih lanjut, harap baca dengan cermat <2>syarat layanan Paradex</2> & <3>dokumentasi</3>.',
   'Limit {{side}} Order Fill': 'Isi Pesanan Batas {{side}}',
   '{{type}} {{side}} Order Submitted': 'Pesanan {{type}} {{side}} Dikirim',
   '{{type}} {{side}} Order Canceled': 'Pesanan {{type}} {{side}} Dibatalkan',

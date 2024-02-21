@@ -1,7 +1,28 @@
 import { Keys } from './en';
 
 const translations: Record<Keys, string> = {
-  'Maker Score': '메이커 점수',
+  'Estimated Receivable Amount': '예상 수령 금액',
+  'Socialized Loss active. Click to learn more.':
+    '사회화된 손실 활성화. 자세히 알아보려면 클릭하세요.',
+  Analytics: '분석',
+  'Sign In to see your account Points stats':
+    '계정 포인트 통계를 보려면 로그인하세요.',
+  '<1>Clock Is Out Of Sync</1> The clock on your device is out of sync. This may cause issues with the application. Please make sure your device clock is set to be auto. For more details please <2>see documentation</2>':
+    '<1>시계가 동기화되지 않음</1> 당신의 장치의 시계가 동기화되지 않았습니다. 이는 애플리케이션에 문제를 일으킬 수 있습니다. 장치 시계가 자동으로 설정되어 있는지 확인하세요. 자세한 내용은 <2>문서</2>를 참조하세요',
+  'Failed to fetch max withdrawable amount':
+    '최대 출금 금액을 가져오지 못했습니다.',
+  'It is not possible to withdraw more than your Max Withdrawable Amount.':
+    '최대 출금 금액을 초과하여 출금할 수 없습니다.',
+  'Max Withdrawable Amount': '최대 출금 금액',
+  'Points Explainer': '포인트 설명',
+  Pool: '계층',
+  'Quote Quality': '견적 품질',
+  'Create Your Public Username': '공개 사용자 이름 만들기',
+  'Edit Your Public Username': '공개 사용자 이름 편집',
+  Trader: '트레이더',
+  LP: 'LP',
+  'You have been signed out.': '로그아웃되었습니다.',
+  'Maker Volume Score': '메이커 거래량 점수',
   'LP Score': 'LP 점수',
   'LP Points Share': 'LP 포인트 공유',
   'Fee Score': '수수료 점수',
@@ -9,15 +30,14 @@ const translations: Record<Keys, string> = {
   'Instrument Share': '거래 종목 공유 비율',
   'Trader Points Share': '트레이더 포인트 공유',
   'Trader Points': '트레이더 포인트',
-  'Liquidity Provider Points': '시장 유동성 공급자 포인트',
+  'Liquidity Provider(LP) Points': '시장 유동성 공급자 포인트(LP)',
   Points: '포인트',
   'Points Overview': '포인트 개요',
   'Total Points': '총 포인트',
   'LP Points': 'LP 포인트',
   '24h Change': '24시간 변동',
   Leaderboard: '리더보드',
-  'Create Your Username': '사용자 이름 생성',
-  'Remind Later': '나중에 알림',
+  Cancel: '취소',
   Portfolio: '포트폴리오',
   Trade: '거래',
   Build: '빌드',
@@ -37,8 +57,11 @@ const translations: Record<Keys, string> = {
   'You have no new notifications': '새로운 알림이 없습니다',
   'Display Toast Notifications': '토스트 알림 표시',
   'Connect Wallet': '지갑 연결',
+  'WalletConnect is taking too long to open. Please refresh the page and try again.':
+    'WalletConnect가 열리는 데 너무 오래 걸립니다. 페이지를 새로고침하고 다시 시도해주세요.',
+  'Unexpected error opening WalletConnect modal. Please refresh the page and try again.':
+    'WalletConnect 모달을 열 때 예기치 않은 오류가 발생했습니다. 페이지를 새로고침하고 다시 시도해주세요.',
   'Connect your Wallet': '지갑을 연결하세요',
-  'Choose Wallet': '지갑 선택',
   'Link Wallet': '지갑 링크',
   'You will receive a signature request. Signing is free and will not send a transaction.':
     '서명 요청을 받게 됩니다. 서명은 무료이며 거래를 보내지 않습니다.',
@@ -57,7 +80,6 @@ const translations: Record<Keys, string> = {
   Edit: '편집',
   'Your username is now hidden. It is not visible to other users.':
     '사용자 이름이 이제 숨겨집니다. 다른 사용자에게 보이지 않습니다.',
-  'Edit Your Username': '사용자 이름 편집',
   'Your username will be visible to other users unless you choose to hide it. You can always change it later.':
     '사용자 이름은 숨기기를 선택하지 않는 한 다른 사용자에게 표시됩니다. 나중에 언제든지 변경할 수 있습니다.',
   'Hide my Username': '사용자 이름 숨기기',
@@ -83,15 +105,20 @@ const translations: Record<Keys, string> = {
     '거래시 정산되는 지속적으로 누적되는 8시간 자금 조달률',
   '8h Funding': '8시간 자금',
   Limit: '한도',
-  LIMIT: '한도',
   Market: '시장',
-  MARKET: '시장',
+  'Stop Limit': '스톱 리미트',
+  'Stop Market': '스톱 마켓',
+  'Trigger Price': '트리거 가격',
   'Limit Price': '한도 가격',
   Amount: '금액',
+  'Reduce Only': '감소만',
+  'Reduce Only will increase position': '리듀스 온리는 포지션을 늘릴 것입니다',
   'Your order stays open until it is filled or you decide to cancel.':
     '주문이 체결되거나 취소하기로 결정할 때까지 주문이 계속 열려 있습니다.',
   'Your order gets filled right away, partially or fully, and whatever is left gets canceled instantly.':
     '주문이 즉시 부분적으로 또는 완전히 체결되며, 남은 부분은 즉시 취소됩니다.',
+  'Conditional limit order that serves to add liquidity to the order book as a Maker order.':
+    '메이커 주문으로 주문서에 유동성을 추가하는 조건부 한정 주문.',
   Fee: '수수료',
   'Currently the fees are fixed and uniform across the platform. Maker {{makerFee}} / Taker {{takerFee}}':
     '현재 수수료는 플랫폼 전체에서 고정되고 일관되게 책정됩니다. 메이커 {{makerFee}} / 테이커 {{takerFee}}',
@@ -128,6 +155,7 @@ const translations: Record<Keys, string> = {
   'Funding Payments': '자금 지급',
   Side: '측면',
   'Entry Price': '진입 가격',
+  'Liquidation Price': '청산 가격',
   'Unrealized Funding': '미실현 자금',
   'Close Position': '포지션 닫기',
   Type: '유형',
@@ -234,8 +262,8 @@ const translations: Record<Keys, string> = {
   'Deposit to Paraclear available': 'Paraclear로 입금 가능',
   'Go to Deposits': '입금으로 이동',
   'Deposit to Paraclear in progress': 'Paraclear로의 입금 진행 중',
-  '<1>Paradex Closed Beta</1> This is a CLOSED BETA version of Paradex, the product is still being tested and can be subject to bugs and errors. For more details please read carefully the <2>Paradex terms of service</2> & <3>documentation</3>.':
-    '<1>Paradex 클로즈 베타</1> 이것은 Paradex의 클로즈 베타 버전으로, 제품은 아직 테스트 중이며 버그와 오류가 있을 수 있습니다. 자세한 내용은 <2>Paradex 이용 약관</2> 및 <3>문서</3>를 주의 깊게 읽어보세요.',
+  '<1>Paradex Beta</1> This is a Beta version of Paradex, the product is still being tested and can be subject to bugs and errors. For more details please read carefully the <2>Paradex terms of service</2> & <3>documentation</3>.':
+    '<1>Paradex 베타</1> 이것은 Paradex의 베타 버전입니다. 제품은 아직 테스트 중이며 버그와 오류가 있을 수 있습니다. 자세한 내용은 <2>Paradex 이용 약관</2> 및 <3>문서</3>를 주의 깊게 읽어주세요.',
   'Limit {{side}} Order Fill': '제한 {{side}} 주문 채우기',
   '{{type}} {{side}} Order Submitted': '{{type}} {{side}} 주문 제출됨',
   '{{type}} {{side}} Order Canceled': '{{type}} {{side}} 주문 취소됨',

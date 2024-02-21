@@ -1,7 +1,26 @@
 import { Keys } from './en';
 
 const translations: Record<Keys, string> = {
-  'Maker Score': '做市商评分',
+  'Estimated Receivable Amount': '预计可收到的金额',
+  'Socialized Loss active. Click to learn more.':
+    '社会化损失已激活。点击了解更多。',
+  Analytics: '分析',
+  'Sign In to see your account Points stats': '登录以查看您的账户积分统计',
+  '<1>Clock Is Out Of Sync</1> The clock on your device is out of sync. This may cause issues with the application. Please make sure your device clock is set to be auto. For more details please <2>see documentation</2>':
+    '<1>设备时钟不同步</1> 您的设备时钟不同步。这可能会导致应用程序出现问题。请确保您的设备时钟设置为自动。更多详情请<2>查看文档</2>',
+  'Failed to fetch max withdrawable amount': '无法获取最大可提取金额',
+  'It is not possible to withdraw more than your Max Withdrawable Amount.':
+    '不可提取超过您的最大可提取金额。',
+  'Max Withdrawable Amount': '最大可提取金额',
+  'Points Explainer': '积分说明',
+  Pool: '等级',
+  'Quote Quality': '报价质量',
+  'Create Your Public Username': '创建您的公共用户名',
+  'Edit Your Public Username': '编辑您的公共用户名',
+  Trader: '交易者',
+  LP: 'LP',
+  'You have been signed out.': '您已登出。',
+  'Maker Volume Score': '制造商成交量得分',
   'LP Score': '流动性提供者评分',
   'LP Points Share': 'LP 积分占比',
   'Fee Score': '手续费评分',
@@ -9,15 +28,14 @@ const translations: Record<Keys, string> = {
   'Instrument Share': '合约占比',
   'Trader Points Share': '交易者积分占比',
   'Trader Points': '交易者积分',
-  'Liquidity Provider Points': '流动性提供者积分',
+  'Liquidity Provider(LP) Points': '流动性提供者积分(LP)',
   Points: '积分',
   'Points Overview': '积分概览',
   'Total Points': '总积分',
   'LP Points': 'LP 积分',
   '24h Change': '24小时变化',
   Leaderboard: '排行榜',
-  'Create Your Username': '创建您的用户名',
-  'Remind Later': '稍后提醒',
+  Cancel: '取消',
   'By connecting a wallet, you agree to <1>Paradex Terms of Service</1> and represent and warrant to Paradex that you are not a <2>Restricted Person</2>.':
     '通过连接钱包，您同意<1>Paradex服务条款</1>，并向Paradex保证您不是<2>受限制的人员</2>。',
   Positions: '位置',
@@ -44,8 +62,11 @@ const translations: Record<Keys, string> = {
   'You have no new notifications': '您没有新的通知',
   'Display Toast Notifications': '显示Toast通知',
   'Connect Wallet': '连接钱包',
+  'WalletConnect is taking too long to open. Please refresh the page and try again.':
+    'WalletConnect 打开时间太长。请刷新页面重试。',
+  'Unexpected error opening WalletConnect modal. Please refresh the page and try again.':
+    '打开 WalletConnect 模态窗口时发生意外错误。请刷新页面重试。',
   'Connect your Wallet': '连接您的钱包',
-  'Choose Wallet': '选择钱包',
   'Link Wallet': '链接钱包',
   'You will receive a signature request. Signing is free and will not send a transaction.':
     '您将收到一个签名请求。签名是免费的，不会发送交易。',
@@ -64,7 +85,6 @@ const translations: Record<Keys, string> = {
   Edit: '编辑',
   'Your username is now hidden. It is not visible to other users.':
     '您的用户名现在已隐藏。其他用户看不到。',
-  'Edit Your Username': '编辑您的用户名',
   'Your username will be visible to other users unless you choose to hide it. You can always change it later.':
     '除非您选择隐藏，否则您的用户名将对其他用户可见。您随时可以更改。',
   'Hide my Username': '隐藏我的用户名',
@@ -79,7 +99,6 @@ const translations: Record<Keys, string> = {
   'Sign Out': '登出',
   'Copy L2 Private Key': '复制L2私钥',
   'No markets available': '没有可用的市场',
-  Market: '市场',
   'Last Price': '最后价格',
   'Open Interest': '未平仓合约',
   '24h Volume': '24小时交易量',
@@ -89,14 +108,20 @@ const translations: Record<Keys, string> = {
     '持续累积的八小时资金费率，并在任何交易时结算',
   '8h Funding': '8小时资金',
   Limit: '限价',
-  LIMIT: '限价',
-  MARKET: '市场',
+  Market: '市场',
+  'Stop Limit': '止损限价',
+  'Stop Market': '止损市价',
+  'Trigger Price': '触发价格',
   'Limit Price': '限价',
   Amount: '数量',
+  'Reduce Only': '仅减少',
+  'Reduce Only will increase position': '仅减少将增加仓位',
   'Your order stays open until it is filled or you decide to cancel.':
     '您的订单将保持开放，直到被执行或您决定取消。',
   'Your order gets filled right away, partially or fully, and whatever is left gets canceled instantly.':
     '您的订单将立即被部分或全部执行，剩余的部分将立即被取消。',
+  'Conditional limit order that serves to add liquidity to the order book as a Maker order.':
+    '条件限价单，用于作为Maker订单向订单簿添加流动性。',
   Fee: '费用',
   'Currently the fees are fixed and uniform across the platform. Maker {{makerFee}} / Taker {{takerFee}}':
     '目前，平台上的费用是固定和统一的。Maker {{makerFee}} / Taker {{takerFee}}',
@@ -127,6 +152,7 @@ const translations: Record<Keys, string> = {
   Spread: '差价',
   Side: '方向',
   'Entry Price': '入场价格',
+  'Liquidation Price': 'Giá thanh lý',
   'Unrealized Funding': '未实现的资金',
   'Close Position': '平仓',
   Type: '类型',
@@ -231,8 +257,8 @@ const translations: Record<Keys, string> = {
   'Deposit to Paraclear available': '可以向 Paraclear 存款',
   'Go to Deposits': '前往存款',
   'Deposit to Paraclear in progress': '正在向 Paraclear 存款',
-  '<1>Paradex Closed Beta</1> This is a CLOSED BETA version of Paradex, the product is still being tested and can be subject to bugs and errors. For more details please read carefully the <2>Paradex terms of service</2> & <3>documentation</3>.':
-    '<1>Paradex 封闭测试版</1> 这是 Paradex 的封闭测试版，产品仍在测试中，可能存在错误和问题。有关更多详细信息，请仔细阅读 <2>Paradex 服务条款</2> 和 <3>文档</3>。',
+  '<1>Paradex Beta</1> This is a Beta version of Paradex, the product is still being tested and can be subject to bugs and errors. For more details please read carefully the <2>Paradex terms of service</2> & <3>documentation</3>.':
+    '<1>Paradex Beta</1> 这是 Paradex 的 Beta 版本，产品仍在测试中，可能会出现错误和问题。更多详情请仔细阅读 <2>Paradex 服务条款</2> 和 <3>文档</3>。',
   'Limit {{side}} Order Fill': '限价 {{side}} 订单填充',
   '{{type}} {{side}} Order Submitted': '{{type}} {{side}} 订单已提交',
   '{{type}} {{side}} Order Canceled': '{{type}} {{side}} 订单已取消',

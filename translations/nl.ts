@@ -1,7 +1,28 @@
 import { Keys } from './en';
 
 const translations: Record<Keys, string> = {
-  'Maker Score': 'Maker Score',
+  'Estimated Receivable Amount': 'Geschat Ontvangbaar Bedrag',
+  'Socialized Loss active. Click to learn more.':
+    'Gesocialiseerd Verlies actief. Klik om meer te leren.',
+  Analytics: 'Analyse',
+  'Sign In to see your account Points stats':
+    'Log in om uw accountpuntenstatistieken te zien',
+  '<1>Clock Is Out Of Sync</1> The clock on your device is out of sync. This may cause issues with the application. Please make sure your device clock is set to be auto. For more details please <2>see documentation</2>':
+    '<1>Klok Is Niet Gesynchroniseerd</1> De klok op uw apparaat is niet gesynchroniseerd. Dit kan problemen veroorzaken met de applicatie. Zorg ervoor dat de klok van uw apparaat is ingesteld op automatisch. Voor meer details zie de <2>documentatie</2>',
+  'Failed to fetch max withdrawable amount':
+    'Kan het maximale opneembare bedrag niet ophalen',
+  'It is not possible to withdraw more than your Max Withdrawable Amount.':
+    'Het is niet mogelijk om meer op te nemen dan uw maximale opneembare bedrag.',
+  'Max Withdrawable Amount': 'Maximaal opneembare bedrag',
+  'Points Explainer': 'Punten Uitlegger',
+  Pool: 'Niveau',
+  'Quote Quality': 'Koerskwaliteit',
+  'Create Your Public Username': 'Maak uw openbare gebruikersnaam',
+  'Edit Your Public Username': 'Bewerk uw openbare gebruikersnaam',
+  Trader: 'Trader',
+  LP: 'LP',
+  'You have been signed out.': 'U bent uitgelogd.',
+  'Maker Volume Score': 'Maker Volume Score',
   'LP Score': 'LP Score',
   'LP Points Share': 'LP Puntenaandeel',
   'Fee Score': 'Kosten Score',
@@ -9,15 +30,14 @@ const translations: Record<Keys, string> = {
   'Instrument Share': 'Instrument Aandeel',
   'Trader Points Share': 'Trader Puntenaandeel',
   'Trader Points': 'Trader Punten',
-  'Liquidity Provider Points': 'Liquiditeit Provider Punten',
+  'Liquidity Provider(LP) Points': 'Liquiditeit Provider(LP) Punten',
   Points: 'Punten',
   'Points Overview': 'Puntenoverzicht',
   'Total Points': 'Totale Punten',
   'LP Points': 'LP Punten',
   '24h Change': '24u Verandering',
   Leaderboard: 'Ranglijst',
-  'Create Your Username': 'Maak uw gebruikersnaam',
-  'Remind Later': 'Herinner later',
+  Cancel: 'Annuleren',
   Portfolio: 'Portefeuille',
   Trade: 'Handel',
   Build: 'Bouwen',
@@ -37,8 +57,11 @@ const translations: Record<Keys, string> = {
   'You have no new notifications': 'Je hebt geen nieuwe meldingen',
   'Display Toast Notifications': 'Toon Toast Meldingen',
   'Connect Wallet': 'Verbind Wallet',
+  'WalletConnect is taking too long to open. Please refresh the page and try again.':
+    'WalletConnect duurt te lang om te openen. Vernieuw de pagina en probeer het opnieuw.',
+  'Unexpected error opening WalletConnect modal. Please refresh the page and try again.':
+    'Onverwachte fout bij het openen van het WalletConnect-modal. Vernieuw de pagina en probeer het opnieuw.',
   'Connect your Wallet': 'Verbind je Wallet',
-  'Choose Wallet': 'Kies Wallet',
   'Link Wallet': 'Link Wallet',
   'You will receive a signature request. Signing is free and will not send a transaction.':
     'Je ontvangt een handtekeningverzoek. Ondertekenen is gratis en zal geen transactie verzenden.',
@@ -58,7 +81,6 @@ const translations: Record<Keys, string> = {
   Edit: 'Bewerken',
   'Your username is now hidden. It is not visible to other users.':
     'Uw gebruikersnaam is nu verborgen. Het is niet zichtbaar voor andere gebruikers.',
-  'Edit Your Username': 'Bewerk uw gebruikersnaam',
   'Your username will be visible to other users unless you choose to hide it. You can always change it later.':
     'Uw gebruikersnaam zal zichtbaar zijn voor andere gebruikers, tenzij u ervoor kiest om deze te verbergen. U kunt het altijd later wijzigen.',
   'Hide my Username': 'Verberg mijn gebruikersnaam',
@@ -84,15 +106,20 @@ const translations: Record<Keys, string> = {
     'Acht uur financieringspercentage dat continu wordt opgebouwd op posities en wordt afgewikkeld bij elke handel',
   '8h Funding': '8u Financiering',
   Limit: 'Limiet',
-  LIMIT: 'LIMIET',
   Market: 'Markt',
-  MARKET: 'MARKT',
+  'Stop Limit': 'Stop Limiet',
+  'Stop Market': 'Stop Markt',
+  'Trigger Price': 'Trigger Prijs',
   'Limit Price': 'Limietprijs',
   Amount: 'Hoeveelheid',
+  'Reduce Only': 'Alleen Verminderen',
+  'Reduce Only will increase position': 'Reduce Only zal de positie vergroten',
   'Your order stays open until it is filled or you decide to cancel.':
     'Uw order blijft open tot deze is ingevuld of u besluit te annuleren.',
   'Your order gets filled right away, partially or fully, and whatever is left gets canceled instantly.':
     'Uw order wordt direct ingevuld, gedeeltelijk of volledig, en wat overblijft wordt direct geannuleerd.',
+  'Conditional limit order that serves to add liquidity to the order book as a Maker order.':
+    'Voorwaardelijke limietorder die dient om liquiditeit toe te voegen aan het orderboek als een Maker-order.',
   Fee: 'Vergoeding',
   'Currently the fees are fixed and uniform across the platform. Maker {{makerFee}} / Taker {{takerFee}}':
     'Momenteel zijn de kosten vast en uniform over het platform. Maker {{makerFee}} / Taker {{takerFee}}',
@@ -129,6 +156,7 @@ const translations: Record<Keys, string> = {
   'Funding Payments': 'Financieringsbetalingen',
   Side: 'Kant',
   'Entry Price': 'Instapprijs',
+  'Liquidation Price': 'Liquidatieprijs',
   'Unrealized Funding': 'Onverwezenlijkte Financiering',
   'Close Position': 'Positie Sluiten',
   Type: 'Type',
@@ -235,8 +263,8 @@ const translations: Record<Keys, string> = {
   'Deposit to Paraclear available': 'Storting naar Paraclear beschikbaar',
   'Go to Deposits': 'Ga naar Stortingen',
   'Deposit to Paraclear in progress': 'Storting naar Paraclear in uitvoering',
-  '<1>Paradex Closed Beta</1> This is a CLOSED BETA version of Paradex, the product is still being tested and can be subject to bugs and errors. For more details please read carefully the <2>Paradex terms of service</2> & <3>documentation</3>.':
-    '<1>Paradex Gesloten Beta</1> Dit is een GESLOTEN BETA versie van Paradex, het product wordt nog getest en kan onderhevig zijn aan bugs en fouten. Voor meer details lees zorgvuldig de <2>Paradex servicevoorwaarden</2> & <3>documentatie</3>.',
+  '<1>Paradex Beta</1> This is a Beta version of Paradex, the product is still being tested and can be subject to bugs and errors. For more details please read carefully the <2>Paradex terms of service</2> & <3>documentation</3>.':
+    '<1>Paradex Beta</1> Dit is een bètaversie van Paradex, het product wordt nog steeds getest en kan onderhevig zijn aan bugs en fouten. Voor meer details lees zorgvuldig de <2>Paradex servicevoorwaarden</2> & <3>documentatie</3>.',
   'Limit {{side}} Order Fill': 'Limiet {{side}} Order Vulling',
   '{{type}} {{side}} Order Submitted': '{{type}} {{side}} Order Ingediend',
   '{{type}} {{side}} Order Canceled': '{{type}} {{side}} Order Geannuleerd',

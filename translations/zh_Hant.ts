@@ -1,7 +1,26 @@
 import { Keys } from './en';
 
 const translations: Record<Keys, string> = {
-  'Maker Score': '造市商評分',
+  'Estimated Receivable Amount': '預計應收金額',
+  'Socialized Loss active. Click to learn more.':
+    '社會化損失已激活。點擊了解更多。',
+  Analytics: '分析',
+  'Sign In to see your account Points stats': '登錄以查看您的賬戶積分統計',
+  '<1>Clock Is Out Of Sync</1> The clock on your device is out of sync. This may cause issues with the application. Please make sure your device clock is set to be auto. For more details please <2>see documentation</2>':
+    '<1>時鐘不同步</1> 您設備上的時鐘不同步。這可能會導致應用程序出現問題。請確保您的設備時鐘設置為自動。有關更多詳細信息，請<2>參閱文檔</2>',
+  'Failed to fetch max withdrawable amount': '無法獲取最大可提取金額',
+  'It is not possible to withdraw more than your Max Withdrawable Amount.':
+    '不可提取超過您的最大可提取金額。',
+  'Max Withdrawable Amount': '最大可提取金額',
+  'Points Explainer': '積分說明',
+  Pool: '等級',
+  'Quote Quality': '報價品質',
+  'Create Your Public Username': '創建您的公共用戶名',
+  'Edit Your Public Username': '編輯您的公共用戶名',
+  Trader: '交易者',
+  LP: 'LP',
+  'You have been signed out.': '您已登出。',
+  'Maker Volume Score': '製造商成交量得分',
   'LP Score': '流動性提供者評分',
   'LP Points Share': 'LP 積分占比',
   'Fee Score': '手續費評分',
@@ -9,15 +28,14 @@ const translations: Record<Keys, string> = {
   'Instrument Share': '合約占比',
   'Trader Points Share': '交易者積分占比',
   'Trader Points': '交易者積分',
-  'Liquidity Provider Points': '流動性提供者積分',
+  'Liquidity Provider(LP) Points': '流動性提供者積分(LP)',
   Points: '積分',
   'Points Overview': '積分概覽',
   'Total Points': '總積分',
   'LP Points': 'LP 積分',
   '24h Change': '24小時變化',
   Leaderboard: '排行榜',
-  'Create Your Username': '創建您的用戶名',
-  'Remind Later': '稍後提醒',
+  Cancel: '取消',
   Portfolio: '投資組合',
   Trade: '交易',
   Build: '建立',
@@ -37,8 +55,11 @@ const translations: Record<Keys, string> = {
   'You have no new notifications': '您沒有新的通知',
   'Display Toast Notifications': '顯示吐司通知',
   'Connect Wallet': '連接錢包',
+  'WalletConnect is taking too long to open. Please refresh the page and try again.':
+    'WalletConnect 開啟時間過長。請重新整理頁面並重試。',
+  'Unexpected error opening WalletConnect modal. Please refresh the page and try again.':
+    '開啟 WalletConnect 模態窗口時發生意外錯誤。請重新整理頁面並重試。',
   'Connect your Wallet': '連接您的錢包',
-  'Choose Wallet': '選擇錢包',
   'Link Wallet': '鏈接錢包',
   'You will receive a signature request. Signing is free and will not send a transaction.':
     '您將收到簽名請求。簽名是免費的，不會發送交易。',
@@ -57,7 +78,6 @@ const translations: Record<Keys, string> = {
   Edit: '編輯',
   'Your username is now hidden. It is not visible to other users.':
     '您的用戶名現在已隱藏。其他用戶看不到。',
-  'Edit Your Username': '編輯您的用戶名',
   'Your username will be visible to other users unless you choose to hide it. You can always change it later.':
     '除非您選擇隱藏，否則您的用戶名將對其他用戶可見。您隨時可以稍後更改。',
   'Hide my Username': '隱藏我的用戶名',
@@ -81,15 +101,20 @@ const translations: Record<Keys, string> = {
     '持續累積的八小時資金利率，並在任何交易結算',
   '8h Funding': '8小時資金',
   Limit: '限價',
-  LIMIT: '限價',
   Market: '市價',
-  MARKET: '市價',
+  'Stop Limit': '止損限價',
+  'Stop Market': '止損市價',
+  'Trigger Price': '觸發價格',
   'Limit Price': '限價',
   Amount: '數量',
+  'Reduce Only': '僅減少',
+  'Reduce Only will increase position': '僅減少將增加倉位',
   'Your order stays open until it is filled or you decide to cancel.':
     '您的訂單將保持開放，直到被執行或您決定取消。',
   'Your order gets filled right away, partially or fully, and whatever is left gets canceled instantly.':
     '您的訂單將立即被執行，部分或全部，剩下的將立即被取消。',
+  'Conditional limit order that serves to add liquidity to the order book as a Maker order.':
+    '條件限價單，用於將流動性添加到訂單簿作為Maker訂單。',
   Fee: '費用',
   'Currently the fees are fixed and uniform across the platform. Maker {{makerFee}} / Taker {{takerFee}}':
     '目前，費用在平台上是固定和統一的。製造商 {{makerFee}} / 接受者 {{takerFee}}',
@@ -125,6 +150,7 @@ const translations: Record<Keys, string> = {
   'Funding Payments': '資金支付',
   Side: '方向',
   'Entry Price': '入場價格',
+  'Liquidation Price': '清算價格',
   'Unrealized Funding': '未實現的資金',
   'Close Position': '關閉位置',
   Type: '類型',
@@ -231,8 +257,8 @@ const translations: Record<Keys, string> = {
   'Deposit to Paraclear available': '可以存款到Paraclear',
   'Go to Deposits': '去存款',
   'Deposit to Paraclear in progress': '正在進行存款到Paraclear',
-  '<1>Paradex Closed Beta</1> This is a CLOSED BETA version of Paradex, the product is still being tested and can be subject to bugs and errors. For more details please read carefully the <2>Paradex terms of service</2> & <3>documentation</3>.':
-    '<1>Paradex封閉測試版</1> 這是Paradex的封閉測試版，產品仍在測試中，可能存在錯誤和問題。欲了解更多詳情，請仔細閱讀<2>Paradex服務條款</2>和<3>文檔</3>。',
+  '<1>Paradex Beta</1> This is a Beta version of Paradex, the product is still being tested and can be subject to bugs and errors. For more details please read carefully the <2>Paradex terms of service</2> & <3>documentation</3>.':
+    '<1>Paradex Beta</1> 這是Paradex的Beta版本，產品仍在測試中，可能會出現錯誤和錯誤。有關更多詳細信息，請仔細閱讀<2>Paradex服務條款</2>和<3>文檔</3>。',
   'Limit {{side}} Order Fill': '限價{{side}}訂單填充',
   '{{type}} {{side}} Order Submitted': '{{type}} {{side}}訂單已提交',
   '{{type}} {{side}} Order Canceled': '{{type}} {{side}}訂單已取消',

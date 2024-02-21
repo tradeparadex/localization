@@ -1,7 +1,27 @@
 import { Keys } from './en';
 
 const translations: Record<Keys, string> = {
-  'Maker Score': 'メイカースコア',
+  'Estimated Receivable Amount': '見積もり受取可能額',
+  'Socialized Loss active. Click to learn more.':
+    'ソーシャライズドロスが有効です。詳細はクリックしてください。',
+  Analytics: 'アナリティクス',
+  'Sign In to see your account Points stats':
+    'アカウントのポイント統計を見るにはサインインしてください',
+  '<1>Clock Is Out Of Sync</1> The clock on your device is out of sync. This may cause issues with the application. Please make sure your device clock is set to be auto. For more details please <2>see documentation</2>':
+    '<1>クロックが同期していません</1> あなたのデバイスのクロックが同期していません。これはアプリケーションに問題を引き起こす可能性があります。デバイスのクロックが自動に設定されていることを確認してください。詳細については、<2>ドキュメント</2>をご覧ください',
+  'Failed to fetch max withdrawable amount': '最大出金金額の取得に失敗しました',
+  'It is not possible to withdraw more than your Max Withdrawable Amount.':
+    '最大出金金額を超える出金はできません。',
+  'Max Withdrawable Amount': '最大出金金額',
+  'Points Explainer': 'ポイント説明',
+  Pool: 'ティア',
+  'Quote Quality': 'クオート品質',
+  'Create Your Public Username': '公開ユーザー名を作成する',
+  'Edit Your Public Username': '公開ユーザー名を編集する',
+  Trader: 'トレーダー',
+  LP: 'LP',
+  'You have been signed out.': 'ログアウトしました。',
+  'Maker Volume Score': 'メーカーボリュームスコア',
   'LP Score': 'LPスコア',
   'LP Points Share': 'LPポイントシェア',
   'Fee Score': '手数料スコア',
@@ -9,15 +29,14 @@ const translations: Record<Keys, string> = {
   'Instrument Share': 'インストルメントシェア',
   'Trader Points Share': 'トレーダーポイントシェア',
   'Trader Points': 'トレーダーポイント',
-  'Liquidity Provider Points': '流動性供給者ポイント',
+  'Liquidity Provider(LP) Points': '流動性供給者ポイント(LP)',
   Points: 'ポイント',
   'Points Overview': 'ポイント概要',
   'Total Points': '総ポイント',
   'LP Points': 'LPポイント',
   '24h Change': '24時間の変動',
   Leaderboard: 'リーダーボード',
-  'Create Your Username': 'ユーザーネームを作成する',
-  'Remind Later': '後でリマインド',
+  Cancel: 'キャンセル',
   Portfolio: 'ポートフォリオ',
   Trade: '取引',
   Build: 'ビルド',
@@ -37,8 +56,11 @@ const translations: Record<Keys, string> = {
   'You have no new notifications': '新しい通知はありません',
   'Display Toast Notifications': 'トースト通知を表示',
   'Connect Wallet': 'ウォレットを接続',
+  'WalletConnect is taking too long to open. Please refresh the page and try again.':
+    'WalletConnectのオープンに時間がかかりすぎています。ページを更新してもう一度お試しください。',
+  'Unexpected error opening WalletConnect modal. Please refresh the page and try again.':
+    'WalletConnectモーダルのオープン中に予期しないエラーが発生しました。ページを更新してもう一度お試しください。',
   'Connect your Wallet': 'あなたのウォレットを接続',
-  'Choose Wallet': 'ウォレットを選択',
   'Link Wallet': 'ウォレットをリンク',
   'You will receive a signature request. Signing is free and will not send a transaction.':
     '署名リクエストを受け取ります。署名は無料で、トランザクションは送信されません。',
@@ -57,7 +79,6 @@ const translations: Record<Keys, string> = {
   Edit: '編集',
   'Your username is now hidden. It is not visible to other users.':
     'あなたのユーザー名は現在非表示です。他のユーザーには表示されません。',
-  'Edit Your Username': 'ユーザー名を編集',
   'Your username will be visible to other users unless you choose to hide it. You can always change it later.':
     'ユーザー名は、非表示に設定しない限り他のユーザーに表示されます。後でいつでも変更することができます。',
   'Hide my Username': 'ユーザー名を隠す',
@@ -83,15 +104,21 @@ const translations: Record<Keys, string> = {
     'ポジションに対して継続的に蓄積され、任意の取引で決済される8時間の資金調達率',
   '8h Funding': '8時間の資金調達',
   Limit: '制限',
-  LIMIT: '制限',
   Market: '市場',
-  MARKET: '市場',
+  'Stop Limit': 'ストップリミット',
+  'Stop Market': 'ストップマーケット',
+  'Trigger Price': 'トリガープライス',
   'Limit Price': '制限価格',
   Amount: '数量',
+  'Reduce Only': '減少のみ',
+  'Reduce Only will increase position':
+    'リデュースオンリーはポジションを増やします',
   'Your order stays open until it is filled or you decide to cancel.':
     '注文は、埋められるかキャンセルするまで開いたままです。',
   'Your order gets filled right away, partially or fully, and whatever is left gets canceled instantly.':
     '注文はすぐに部分的または完全に埋められ、残った部分は即座にキャンセルされます。',
+  'Conditional limit order that serves to add liquidity to the order book as a Maker order.':
+    'メーカーオーダーとして注文ブックに流動性を追加するための条件付きリミットオーダー。',
   Fee: '手数料',
   'Currently the fees are fixed and uniform across the platform. Maker {{makerFee}} / Taker {{takerFee}}':
     '現在、手数料はプラットフォーム全体で固定かつ一様です。メーカー {{makerFee}} / テイカー {{takerFee}}',
@@ -128,6 +155,7 @@ const translations: Record<Keys, string> = {
   'Funding Payments': '資金調達の支払い',
   Side: 'サイド',
   'Entry Price': 'エントリー価格',
+  'Liquidation Price': '清算価格',
   'Unrealized Funding': '未実現の資金調達',
   'Close Position': 'ポジションを閉じる',
   Type: 'タイプ',
@@ -235,8 +263,8 @@ const translations: Record<Keys, string> = {
   'Deposit to Paraclear available': 'Paraclearへの預け入れが可能です',
   'Go to Deposits': '預け入れに進む',
   'Deposit to Paraclear in progress': 'Paraclearへの預け入れが進行中です',
-  '<1>Paradex Closed Beta</1> This is a CLOSED BETA version of Paradex, the product is still being tested and can be subject to bugs and errors. For more details please read carefully the <2>Paradex terms of service</2> & <3>documentation</3>.':
-    '<1>Paradexクローズドベータ</1> これはParadexのクローズドベータ版で、製品はまだテスト中であり、バグやエラーが発生する可能性があります。詳細については、<2>Paradexの利用規約</2>および<3>ドキュメンテーション</3>をよくお読みください。',
+  '<1>Paradex Beta</1> This is a Beta version of Paradex, the product is still being tested and can be subject to bugs and errors. For more details please read carefully the <2>Paradex terms of service</2> & <3>documentation</3>.':
+    '<1>Paradex Beta</1> これはParadexのベータ版です。製品はまだテスト中であり、バグやエラーの対象となる可能性があります。詳細については、<2>Paradex利用規約</2>と<3>ドキュメント</3>をよくお読みください。',
   'Limit {{side}} Order Fill': '制限{{side}}注文埋め',
   '{{type}} {{side}} Order Submitted': '{{type}} {{side}}注文が提出されました',
   '{{type}} {{side}} Order Canceled':

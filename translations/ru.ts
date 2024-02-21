@@ -1,7 +1,28 @@
 import { Keys } from './en';
 
 const translations: Record<Keys, string> = {
-  'Maker Score': 'Очки мейкера',
+  'Estimated Receivable Amount': 'Ожидаемая сумма к получению',
+  'Socialized Loss active. Click to learn more.':
+    'Активизирован Socialized Loss. Нажмите, чтобы узнать больше.',
+  Analytics: 'Аналитика',
+  'Sign In to see your account Points stats':
+    'Войдите, чтобы увидеть статистику очков вашего аккаунта',
+  '<1>Clock Is Out Of Sync</1> The clock on your device is out of sync. This may cause issues with the application. Please make sure your device clock is set to be auto. For more details please <2>see documentation</2>':
+    '<1>Часы не синхронизированы</1> Часы на вашем устройстве не синхронизированы. Это может вызвать проблемы с приложением. Пожалуйста, убедитесь, что часы вашего устройства установлены на автоматически. Для получения дополнительной информации, пожалуйста, <2>ознакомьтесь с документацией</2>',
+  'Failed to fetch max withdrawable amount':
+    'Не удалось получить максимальную сумму вывода',
+  'It is not possible to withdraw more than your Max Withdrawable Amount.':
+    'Невозможно вывести больше, чем ваша максимальная сумма вывода.',
+  'Max Withdrawable Amount': 'Максимальная сумма вывода',
+  'Points Explainer': 'Что такое очки?',
+  Pool: 'Уровень',
+  'Quote Quality': 'Качество предложения',
+  'Create Your Public Username': 'Создать ваш публичный логин',
+  'Edit Your Public Username': 'Редактировать ваш публичный логин',
+  Trader: 'Трейдер',
+  LP: 'LP',
+  'You have been signed out.': 'Вы вышли из системы.',
+  'Maker Volume Score': 'Счет объема мейкера',
   'LP Score': 'LP Очки',
   'LP Points Share': 'Доля LP очков',
   'Fee Score': 'Очки комиссий',
@@ -9,15 +30,14 @@ const translations: Record<Keys, string> = {
   'Instrument Share': 'Доля инструмента',
   'Trader Points Share': 'Доля очков трейдера',
   'Trader Points': 'Очки трейдера',
-  'Liquidity Provider Points': 'Очки поставщика ликвидности',
+  'Liquidity Provider(LP) Points': 'Очки поставщика ликвидности(LP)',
   Points: 'Очки',
   'Points Overview': 'Обзор очков',
   'Total Points': 'Общее количество очков',
   'LP Points': 'LP Очки',
   '24h Change': '24ч Изменение',
   Leaderboard: 'Таблица лидеров',
-  'Create Your Username': 'Создайте ваше имя пользователя',
-  'Remind Later': 'Напомнить позже',
+  Cancel: 'Отмена',
   Portfolio: 'Портфель',
   Trade: 'Торговля',
   Build: 'Разработчикам',
@@ -37,8 +57,11 @@ const translations: Record<Keys, string> = {
   'You have no new notifications': 'У вас нет новых уведомлений',
   'Display Toast Notifications': 'Показать уведомления Toast',
   'Connect Wallet': 'Подключить кошелек',
+  'WalletConnect is taking too long to open. Please refresh the page and try again.':
+    'WalletConnect занимает слишком много времени для открытия. Пожалуйста, обновите страницу и попробуйте еще раз.',
+  'Unexpected error opening WalletConnect modal. Please refresh the page and try again.':
+    'Неожиданная ошибка при открытии модального окна WalletConnect. Пожалуйста, обновите страницу и попробуйте еще раз.',
   'Connect your Wallet': 'Подключите ваш кошелек',
-  'Choose Wallet': 'Выберите кошелек',
   'Link Wallet': 'Связать кошелек',
   'You will receive a signature request. Signing is free and will not send a transaction.':
     'Вы получите запрос на подпись. Подписание бесплатно и не отправит транзакцию.',
@@ -57,7 +80,6 @@ const translations: Record<Keys, string> = {
   Edit: 'Редактировать',
   'Your username is now hidden. It is not visible to other users.':
     'Ваше имя пользователя теперь скрыто. Оно не видно другим пользователям.',
-  'Edit Your Username': 'Изменить ваше имя пользователя',
   'Your username will be visible to other users unless you choose to hide it. You can always change it later.':
     'Ваше имя пользователя будет видно другим пользователям, если вы не выберете его скрытие. Вы всегда можете изменить его позже.',
   'Hide my Username': 'Скрыть мое имя пользователя',
@@ -83,15 +105,20 @@ const translations: Record<Keys, string> = {
     'Восьмичасовая ставка финансирования, которая непрерывно начисляется на позиции и урегулирована при любой сделке',
   '8h Funding': '8ч финансирования',
   Limit: 'Лимит',
-  LIMIT: 'ЛИМИТ',
   Market: 'Рынок',
-  MARKET: 'РЫНОК',
+  'Stop Limit': 'Стоп-лимит',
+  'Stop Market': 'Стоп-маркет',
+  'Trigger Price': 'Цена срабатывания',
   'Limit Price': 'Лимитная цена',
   Amount: 'Количество',
+  'Reduce Only': 'Только уменьшение',
+  'Reduce Only will increase position': '"Только уменьшение" увеличит позицию',
   'Your order stays open until it is filled or you decide to cancel.':
     'Ваш заказ остается открытым, пока его не исполнят или вы не решите отменить.',
   'Your order gets filled right away, partially or fully, and whatever is left gets canceled instantly.':
     'Ваш заказ немедленно исполняется частично или полностью, и все, что остается, мгновенно отменяется.',
+  'Conditional limit order that serves to add liquidity to the order book as a Maker order.':
+    'Условный лимитный ордер, который служит для добавления ликвидности в стакан заказов в качестве ордера Maker.',
   Fee: 'Комиссия',
   'Currently the fees are fixed and uniform across the platform. Maker {{makerFee}} / Taker {{takerFee}}':
     'В настоящее время комиссии фиксированы и одинаковы по всей платформе. Мейкер {{makerFee}} / Тейкер {{takerFee}}',
@@ -128,6 +155,7 @@ const translations: Record<Keys, string> = {
   'Funding Payments': 'Платежи по финансированию',
   Side: 'Сторона',
   'Entry Price': 'Цена входа',
+  'Liquidation Price': 'Цена ликвидации',
   'Unrealized Funding': 'Нереализованное финансирование',
   'Close Position': 'Закрыть позицию',
   Type: 'Тип',
@@ -234,8 +262,8 @@ const translations: Record<Keys, string> = {
   'Deposit to Paraclear available': 'Доступен депозит в Paraclear',
   'Go to Deposits': 'Перейти к депозитам',
   'Deposit to Paraclear in progress': 'Депозит в Paraclear в процессе',
-  '<1>Paradex Closed Beta</1> This is a CLOSED BETA version of Paradex, the product is still being tested and can be subject to bugs and errors. For more details please read carefully the <2>Paradex terms of service</2> & <3>documentation</3>.':
-    '<1>Закрытая бета-версия Paradex</1> Это ЗАКРЫТАЯ БЕТА-ВЕРСИЯ Paradex, продукт все еще тестируется и может содержать ошибки и сбои. Для получения дополнительной информации внимательно прочитайте <2>условия использования Paradex</2> и <3>документацию</3>.',
+  '<1>Paradex Beta</1> This is a Beta version of Paradex, the product is still being tested and can be subject to bugs and errors. For more details please read carefully the <2>Paradex terms of service</2> & <3>documentation</3>.':
+    '<1>Paradex Beta</1> Это бета-версия Paradex, продукт все еще находится в стадии тестирования и может быть подвержен ошибкам. Для получения дополнительной информации внимательно прочитайте <2>условия использования Paradex</2> и <3>документацию</3>.',
   'Limit {{side}} Order Fill': 'Лимит {{side}} Заполнение заказа',
   '{{type}} {{side}} Order Submitted': '{{type}} {{side}} Заказ отправлен',
   '{{type}} {{side}} Order Canceled': '{{type}} {{side}} Заказ отменен',
