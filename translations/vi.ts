@@ -1,7 +1,27 @@
 import { Keys } from './en';
 
 const translations: Record<Keys, string> = {
-  'Maker Score': 'Điểm Maker',
+  'Estimated Receivable Amount': 'Số tiền nhận dự kiến',
+  'Socialized Loss active. Click to learn more.':
+    'Lỗ xã hội hóa đang hoạt động. Nhấp để tìm hiểu thêm.',
+  Analytics: 'Phân tích',
+  'Sign In to see your account Points stats':
+    'Đăng nhập để xem thống kê Điểm tài khoản của bạn',
+  '<1>Clock Is Out Of Sync</1> The clock on your device is out of sync. This may cause issues with the application. Please make sure your device clock is set to be auto. For more details please <2>see documentation</2>':
+    '<1>Đồng hồ không đồng bộ</1> Đồng hồ trên thiết bị của bạn không đồng bộ. Điều này có thể gây ra vấn đề với ứng dụng. Vui lòng đảm bảo rằng đồng hồ thiết bị của bạn được đặt để tự động. Để biết thêm chi tiết, vui lòng <2>xem tài liệu</2>',
+  'Failed to fetch max withdrawable amount': 'Không thể lấy số tiền rút tối đa',
+  'It is not possible to withdraw more than your Max Withdrawable Amount.':
+    'Không thể rút nhiều hơn Số tiền Rút tối đa của bạn.',
+  'Max Withdrawable Amount': 'Số tiền Rút tối đa',
+  'Points Explainer': 'Giải Thích Điểm',
+  Pool: 'Cấp',
+  'Quote Quality': 'Chất lượng báo giá',
+  'Create Your Public Username': 'Tạo Tên người dùng Công khai của Bạn',
+  'Edit Your Public Username': 'Chỉnh sửa Tên người dùng Công khai của Bạn',
+  Trader: 'Trader',
+  LP: 'LP',
+  'You have been signed out.': 'Bạn đã đăng xuất.',
+  'Maker Volume Score': 'Tỉ số nhà sản xuất',
   'LP Score': 'Điểm LP',
   'LP Points Share': 'Tỷ lệ Điểm LP',
   'Fee Score': 'Điểm Phí',
@@ -9,15 +29,14 @@ const translations: Record<Keys, string> = {
   'Instrument Share': 'Tỷ lệ Công cụ',
   'Trader Points Share': 'Tỷ lệ Điểm Trader',
   'Trader Points': 'Điểm Trader',
-  'Liquidity Provider Points': 'Điểm Nhà Cung Cấp Thanh khoản',
+  'Liquidity Provider(LP) Points': 'Điểm Nhà Cung Cấp Thanh khoản(LP)',
   Points: 'Điểm',
   'Points Overview': 'Tổng quan Điểm',
   'Total Points': 'Tổng Điểm',
   'LP Points': 'Điểm LP',
   '24h Change': 'Thay đổi 24h',
   Leaderboard: 'Bảng dẫn đầu',
-  'Create Your Username': 'Tạo tên người dùng của bạn',
-  'Remind Later': 'Nhắc lại sau',
+  Cancel: 'Hủy',
   'By connecting a wallet, you agree to <1>Paradex Terms of Service</1> and represent and warrant to Paradex that you are not a <2>Restricted Person</2>.':
     'Bằng cách kết nối ví, bạn đồng ý với <1>Điều Khoản Dịch Vụ của Paradex</1> và đại diện và bảo đảm cho Paradex rằng bạn không phải là một <2>Người bị hạn chế</2>.',
   Positions: 'Vị trí',
@@ -44,8 +63,11 @@ const translations: Record<Keys, string> = {
   'You have no new notifications': 'Bạn không có thông báo mới',
   'Display Toast Notifications': 'Hiển thị thông báo Toast',
   'Connect Wallet': 'Kết nối ví',
+  'WalletConnect is taking too long to open. Please refresh the page and try again.':
+    'WalletConnect mất quá nhiều thời gian để mở. Vui lòng làm mới trang và thử lại.',
+  'Unexpected error opening WalletConnect modal. Please refresh the page and try again.':
+    'Lỗi không mong muốn khi mở cửa sổ WalletConnect. Vui lòng làm mới trang và thử lại.',
   'Connect your Wallet': 'Kết nối ví của bạn',
-  'Choose Wallet': 'Chọn ví',
   'Link Wallet': 'Liên kết ví',
   'You will receive a signature request. Signing is free and will not send a transaction.':
     'Bạn sẽ nhận được yêu cầu ký. Việc ký miễn phí và sẽ không gửi giao dịch.',
@@ -65,7 +87,6 @@ const translations: Record<Keys, string> = {
   Edit: 'Chỉnh sửa',
   'Your username is now hidden. It is not visible to other users.':
     'Tên người dùng của bạn hiện đã bị ẩn. Nó không hiển thị cho người dùng khác.',
-  'Edit Your Username': 'Chỉnh sửa tên người dùng của bạn',
   'Your username will be visible to other users unless you choose to hide it. You can always change it later.':
     'Tên người dùng của bạn sẽ hiển thị cho người dùng khác trừ khi bạn chọn ẩn nó. Bạn luôn có thể thay đổi nó sau.',
   'Hide my Username': 'Ẩn tên người dùng của tôi',
@@ -82,7 +103,6 @@ const translations: Record<Keys, string> = {
   'Sign Out': 'Đăng xuất',
   'Copy L2 Private Key': 'Sao chép khóa riêng L2',
   'No markets available': 'Không có thị trường nào',
-  Market: 'Thị trường',
   'Last Price': 'Giá cuối cùng',
   'Open Interest': 'Lượng mở',
   '24h Volume': 'Khối lượng 24h',
@@ -92,14 +112,20 @@ const translations: Record<Keys, string> = {
     'Tỷ lệ tài trợ 8 giờ liên tục được tích lũy trên các vị trí và được thanh toán khi giao dịch',
   '8h Funding': 'Tỷ lệ tài trợ 8 giờ',
   Limit: 'Giới hạn',
-  LIMIT: 'GIỚI HẠN',
-  MARKET: 'THỊ TRƯỜNG',
+  Market: 'Thị trường',
+  'Stop Limit': 'Giới Hạn Dừng',
+  'Stop Market': 'Thị Trường Dừng',
+  'Trigger Price': 'Giá Kích Hoạt',
   'Limit Price': 'Giá giới hạn',
   Amount: 'Số lượng',
+  'Reduce Only': 'Chỉ Giảm',
+  'Reduce Only will increase position': 'Chỉ Giảm sẽ tăng vị thế',
   'Your order stays open until it is filled or you decide to cancel.':
     'Đơn đặt hàng của bạn vẫn mở cho đến khi nó được điền hoặc bạn quyết định hủy.',
   'Your order gets filled right away, partially or fully, and whatever is left gets canceled instantly.':
     'Đơn đặt hàng của bạn được điền ngay lập tức, một phần hoặc toàn bộ, và bất cứ thứ gì còn lại sẽ bị hủy ngay lập tức.',
+  'Conditional limit order that serves to add liquidity to the order book as a Maker order.':
+    'Lệnh giới hạn có điều kiện để thêm thanh khoản vào sổ lệnh dưới dạng lệnh Maker.',
   Fee: 'Phí',
   'Currently the fees are fixed and uniform across the platform. Maker {{makerFee}} / Taker {{takerFee}}':
     'Hiện tại, phí được cố định và đồng nhất trên toàn nền tảng. Maker {{makerFee}} / Taker {{takerFee}}',
@@ -131,6 +157,7 @@ const translations: Record<Keys, string> = {
   Spread: 'Chênh lệch',
   Side: 'Bên',
   'Entry Price': 'Giá vào',
+  'Liquidation Price': 'Giá thanh lý',
   'Unrealized Funding': 'Quỹ chưa thực hiện',
   'Close Position': 'Đóng vị trí',
   Type: 'Loại',
@@ -235,8 +262,8 @@ const translations: Record<Keys, string> = {
   'Deposit to Paraclear available': 'Có thể gửi tiền vào Paraclear',
   'Go to Deposits': 'Đi đến Tiền gửi',
   'Deposit to Paraclear in progress': 'Đang gửi tiền vào Paraclear',
-  '<1>Paradex Closed Beta</1> This is a CLOSED BETA version of Paradex, the product is still being tested and can be subject to bugs and errors. For more details please read carefully the <2>Paradex terms of service</2> & <3>documentation</3>.':
-    '<1>Paradex Closed Beta</1> Đây là phiên bản BETA ĐÓNG của Paradex, sản phẩm vẫn đang được thử nghiệm và có thể chịu ảnh hưởng của lỗi và sai sót. Để biết thêm chi tiết, vui lòng đọc kỹ <2>điều khoản dịch vụ Paradex</2> & <3>tài liệu</3>.',
+  '<1>Paradex Beta</1> This is a Beta version of Paradex, the product is still being tested and can be subject to bugs and errors. For more details please read carefully the <2>Paradex terms of service</2> & <3>documentation</3>.':
+    '<1>Paradex Beta</1> Đây là một phiên bản Beta của Paradex, sản phẩm vẫn đang được thử nghiệm và có thể bị lỗi và sai sót. Để biết thêm chi tiết, vui lòng đọc kỹ <2>điều khoản dịch vụ của Paradex</2> & <3>tài liệu</3>.',
   'Limit {{side}} Order Fill': 'Điền đơn hàng giới hạn {{side}}',
   '{{type}} {{side}} Order Submitted': 'Đơn hàng {{type}} {{side}} đã được gửi',
   '{{type}} {{side}} Order Canceled': 'Đơn hàng {{type}} {{side}} đã bị hủy',

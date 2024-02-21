@@ -1,7 +1,28 @@
 import { Keys } from './en';
 
 const translations: Record<Keys, string> = {
-  'Maker Score': 'Pontuação de Maker',
+  'Estimated Receivable Amount': 'Valor Recebível Estimado',
+  'Socialized Loss active. Click to learn more.':
+    'Perda Socializada em vigor. Clique para saber mais.',
+  Analytics: 'Analytics',
+  'Sign In to see your account Points stats':
+    'Faça login para ver as estatísticas de pontos da sua conta',
+  '<1>Clock Is Out Of Sync</1> The clock on your device is out of sync. This may cause issues with the application. Please make sure your device clock is set to be auto. For more details please <2>see documentation</2>':
+    '<1>O Relógio Está Fora de Sincronia</1> O relógio do seu dispositivo está fora de sincronia. Isso pode causar problemas com o aplicativo. Por favor, certifique-se de que o relógio do seu dispositivo está definido para automático. Para mais detalhes, por favor <2>consulte a documentação</2>',
+  'Failed to fetch max withdrawable amount':
+    'Falha ao buscar valor máximo de saque',
+  'It is not possible to withdraw more than your Max Withdrawable Amount.':
+    'Não é possível sacar mais do que o seu Valor Máximo de Saque.',
+  'Max Withdrawable Amount': 'Valor Máximo de Saque',
+  'Points Explainer': 'Explicador de Pontos',
+  Pool: 'Nível',
+  'Quote Quality': 'Qualidade da cotação',
+  'Create Your Public Username': 'Crie seu nome de usuário público',
+  'Edit Your Public Username': 'Edite seu nome de usuário público',
+  Trader: 'Trader',
+  LP: 'LP',
+  'You have been signed out.': 'Você foi desconectado.',
+  'Maker Volume Score': 'Pontuação de Volume do Maker',
   'LP Score': 'Pontuação LP',
   'LP Points Share': 'Quota de Pontos LP',
   'Fee Score': 'Pontuação de Taxa',
@@ -9,15 +30,14 @@ const translations: Record<Keys, string> = {
   'Instrument Share': 'Quota de Instrumento',
   'Trader Points Share': 'Quota de Pontos de Trader',
   'Trader Points': 'Pontos de Trader',
-  'Liquidity Provider Points': 'Pontos de Provedor de Liquidez',
+  'Liquidity Provider(LP) Points': 'Pontos de Provedor de Liquidez(LP)',
   Points: 'Pontos',
   'Points Overview': 'Visão Geral de Pontos',
   'Total Points': 'Pontos Totais',
   'LP Points': 'Pontos LP',
   '24h Change': 'Mudança em 24h',
   Leaderboard: 'Classificação',
-  'Create Your Username': 'Crie seu nome de usuário',
-  'Remind Later': 'Lembrar mais tarde',
+  Cancel: 'Cancelar',
   Portfolio: 'Portfólio',
   Trade: 'Trade',
   Build: 'Construir',
@@ -37,8 +57,11 @@ const translations: Record<Keys, string> = {
   'You have no new notifications': 'Você não tem novas notificações',
   'Display Toast Notifications': 'Exibir Notificações Toast',
   'Connect Wallet': 'Conectar Carteira',
+  'WalletConnect is taking too long to open. Please refresh the page and try again.':
+    'WalletConnect está demorando muito para abrir. Por favor, atualize a página e tente novamente.',
+  'Unexpected error opening WalletConnect modal. Please refresh the page and try again.':
+    'Erro inesperado ao abrir o modal WalletConnect. Por favor, atualize a página e tente novamente.',
   'Connect your Wallet': 'Conecte sua Carteira',
-  'Choose Wallet': 'Escolher Carteira',
   'Link Wallet': 'Associar Carteira',
   'You will receive a signature request. Signing is free and will not send a transaction.':
     'Você receberá uma solicitação de assinatura. Assinar é gratuito e não enviará uma transação.',
@@ -57,7 +80,6 @@ const translations: Record<Keys, string> = {
   Edit: 'Editar',
   'Your username is now hidden. It is not visible to other users.':
     'Seu nome de usuário agora está oculto. Não é visível para outros usuários.',
-  'Edit Your Username': 'Editar Seu Nome de Usuário',
   'Your username will be visible to other users unless you choose to hide it. You can always change it later.':
     'Seu nome de usuário será visível para outros usuários, a menos que você escolha ocultá-lo. Você sempre pode mudá-lo mais tarde.',
   'Hide my Username': 'Ocultar meu nome de usuário',
@@ -83,15 +105,20 @@ const translations: Record<Keys, string> = {
     'Taxa de financiamento de oito horas que é continuamente acumulada em posições e liquidada em qualquer negociação',
   '8h Funding': 'Financiamento de 8h',
   Limit: 'Limite',
-  LIMIT: 'LIMITE',
   Market: 'Mercado',
-  MARKET: 'MERCADO',
+  'Stop Limit': 'Stop Limitada',
+  'Stop Market': 'Stop a Mercado',
+  'Trigger Price': 'Preço de Disparo',
   'Limit Price': 'Preço Limite',
   Amount: 'Quantidade',
+  'Reduce Only': 'Apenas Reduzir',
+  'Reduce Only will increase position': 'Apenas Reduzir aumentará a posição',
   'Your order stays open until it is filled or you decide to cancel.':
-    'Seu pedido permanece aberto até ser preenchido ou você decidir cancelar.',
+    'Sua ordem permanece aberta até ser preenchida ou você decidir cancelar.',
   'Your order gets filled right away, partially or fully, and whatever is left gets canceled instantly.':
-    'Seu pedido é preenchido imediatamente, parcial ou totalmente, e o que sobrar é cancelado instantaneamente.',
+    'Sua ordem é preenchida imediatamente, parcial ou totalmente, e o que sobrar é cancelado instantaneamente.',
+  'Conditional limit order that serves to add liquidity to the order book as a Maker order.':
+    'Ordem limite condicional que serve para adicionar liquidez ao livro de ordens como uma ordem de Maker.',
   Fee: 'Taxa',
   'Currently the fees are fixed and uniform across the platform. Maker {{makerFee}} / Taker {{takerFee}}':
     'Atualmente, as taxas são fixas e uniformes em toda a plataforma. Maker {{makerFee}} / Taker {{takerFee}}',
@@ -128,6 +155,7 @@ const translations: Record<Keys, string> = {
   'Funding Payments': 'Pagamentos de Financiamento',
   Side: 'Lado',
   'Entry Price': 'Preço de Entrada',
+  'Liquidation Price': 'Preço de Liquidação',
   'Unrealized Funding': 'Financiamento Não Realizado',
   'Close Position': 'Fechar Posição',
   Type: 'Tipo',
@@ -234,13 +262,13 @@ const translations: Record<Keys, string> = {
   'Deposit to Paraclear available': 'Depósito para Paraclear disponível',
   'Go to Deposits': 'Ir para Depósitos',
   'Deposit to Paraclear in progress': 'Depósito para Paraclear em andamento',
-  '<1>Paradex Closed Beta</1> This is a CLOSED BETA version of Paradex, the product is still being tested and can be subject to bugs and errors. For more details please read carefully the <2>Paradex terms of service</2> & <3>documentation</3>.':
-    '<1>Paradex Closed Beta</1> Esta é uma versão BETA FECHADA do Paradex, o produto ainda está sendo testado e pode estar sujeito a bugs e erros. Para mais detalhes, por favor leia atentamente os <2>termos de serviço do Paradex</2> e a <3>documentação</3>.',
+  '<1>Paradex Beta</1> This is a Beta version of Paradex, the product is still being tested and can be subject to bugs and errors. For more details please read carefully the <2>Paradex terms of service</2> & <3>documentation</3>.':
+    '<1>Paradex Beta</1> Esta é uma versão Beta da Paradex, o produto ainda está sendo testado e pode estar sujeito a bugs e erros. Para mais detalhes, leia atentamente os <2>termos de serviço da Paradex</2> e a <3>documentação</3>.',
   'Limit {{side}} Order Fill': 'Preenchimento de Ordem Limitada {{side}}',
-  '{{type}} {{side}} Order Submitted': 'Ordem {{type}} {{side}} Submetida',
-  '{{type}} {{side}} Order Canceled': 'Ordem {{type}} {{side}} Cancelada',
+  'Market {{side}} Order Fill': 'Preenchimento de Ordem a Mercado {{side}}',
+  '{{type}} {{side}} Order Submitted': 'Ordem {{side}} {{type}} Submetida',
+  '{{type}} {{side}} Order Canceled': 'Ordem {{side}} {{type}} Cancelada',
   Reason: 'Razão',
-  'Market {{side}} Order Fill': 'Preenchimento de Ordem de Mercado {{side}}',
   'Trade Busted On-Chain': 'Trade falhou on-chain',
   'Fill id': 'Id de preenchimento',
   'Withdraw to wallet failed': 'Falha no saque para a carteira',

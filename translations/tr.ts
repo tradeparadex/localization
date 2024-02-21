@@ -1,7 +1,28 @@
 import { Keys } from './en';
 
 const translations: Record<Keys, string> = {
-  'Maker Score': 'Maker Skoru',
+  'Estimated Receivable Amount': 'Tahmini Alınabilir Miktar',
+  'Socialized Loss active. Click to learn more.':
+    'Sosyal Kayıp aktif. Daha fazla bilgi için tıklayın.',
+  Analytics: 'Analitik',
+  'Sign In to see your account Points stats':
+    'Hesabınızın Puan istatistiklerini görmek için giriş yapın',
+  '<1>Clock Is Out Of Sync</1> The clock on your device is out of sync. This may cause issues with the application. Please make sure your device clock is set to be auto. For more details please <2>see documentation</2>':
+    '<1>Saat Senkronizasyonu Bozuk</1> Cihazınızdaki saat senkronizasyonu bozuk. Bu, uygulamayla ilgili sorunlara neden olabilir. Lütfen cihazınızın saatinin otomatik olarak ayarlandığından emin olun. Daha fazla ayrıntı için lütfen <2>dokümantasyonu</2> görün',
+  'Failed to fetch max withdrawable amount':
+    'Maksimum çekilebilir miktarı alma başarısız',
+  'It is not possible to withdraw more than your Max Withdrawable Amount.':
+    "Maksimum Çekilebilir Miktarınız'dan fazlasını çekemezsiniz.",
+  'Max Withdrawable Amount': 'Maksimum Çekilebilir Miktar',
+  'Points Explainer': 'Puan Açıklayıcı',
+  Pool: 'Seviye',
+  'Quote Quality': 'Teklif Kalitesi',
+  'Create Your Public Username': 'Genel Kullanıcı Adınızı Oluşturun',
+  'Edit Your Public Username': 'Genel Kullanıcı Adınızı Düzenleyin',
+  Trader: 'Trader',
+  LP: 'LP',
+  'You have been signed out.': 'Oturumunuz kapatıldı.',
+  'Maker Volume Score': 'Yapıcı Hacim Skoru',
   'LP Score': 'LP Skoru',
   'LP Points Share': 'LP Puan Oranı',
   'Fee Score': 'Komisyon Skoru',
@@ -9,15 +30,14 @@ const translations: Record<Keys, string> = {
   'Instrument Share': 'Enstrüman Oranı',
   'Trader Points Share': 'Trader Puan Oranı',
   'Trader Points': 'Trader Puanları',
-  'Liquidity Provider Points': 'Likidite Sağlayıcı Puanları',
+  'Liquidity Provider(LP) Points': 'Likidite Sağlayıcı(LP) Puanları',
   Points: 'Puanlar',
   'Points Overview': 'Puan Genel Bakış',
   'Total Points': 'Toplam Puanlar',
   'LP Points': 'LP Puanları',
   '24h Change': '24 Saatlik Değişim',
   Leaderboard: 'Lider tablosu',
-  'Create Your Username': 'Kullanıcı Adınızı Oluşturun',
-  'Remind Later': 'Daha Sonra Hatırlat',
+  Cancel: 'İptal',
   Portfolio: 'Portföy',
   Trade: 'Ticaret',
   Build: 'İnşa etmek',
@@ -37,8 +57,11 @@ const translations: Record<Keys, string> = {
   'You have no new notifications': 'Yeni bildiriminiz yok',
   'Display Toast Notifications': 'Toast Bildirimlerini Göster',
   'Connect Wallet': 'Cüzdanı Bağla',
+  'WalletConnect is taking too long to open. Please refresh the page and try again.':
+    'WalletConnect açılmak için çok uzun sürüyor. Lütfen sayfayı yenileyin ve tekrar deneyin.',
+  'Unexpected error opening WalletConnect modal. Please refresh the page and try again.':
+    'WalletConnect modalını açarken beklenmeyen bir hata oluştu. Lütfen sayfayı yenileyin ve tekrar deneyin.',
   'Connect your Wallet': 'Cüzdanınızı Bağlayın',
-  'Choose Wallet': 'Cüzdan Seç',
   'Link Wallet': 'Cüzdanı Bağla',
   'You will receive a signature request. Signing is free and will not send a transaction.':
     'Bir imza talebi alacaksınız. İmzalama ücretsizdir ve bir işlem göndermez.',
@@ -57,7 +80,6 @@ const translations: Record<Keys, string> = {
   Edit: 'Düzenle',
   'Your username is now hidden. It is not visible to other users.':
     'Kullanıcı adınız şimdi gizli. Diğer kullanıcılara görünmez.',
-  'Edit Your Username': 'Kullanıcı Adınızı Düzenleyin',
   'Your username will be visible to other users unless you choose to hide it. You can always change it later.':
     'Kullanıcı adınız, onu gizlemeyi seçmediğiniz sürece diğer kullanıcılara görünür olacaktır. Daha sonra her zaman değiştirebilirsiniz.',
   'Hide my Username': 'Kullanıcı Adımı Gizle',
@@ -83,15 +105,20 @@ const translations: Record<Keys, string> = {
     'Pozisyonlarda sürekli birikmiş ve herhangi bir işlemde karara bağlanan sekiz saatlik fonlama oranı',
   '8h Funding': '8 Saatlik Fonlama',
   Limit: 'Limit',
-  LIMIT: 'LİMİT',
   Market: 'Piyasa',
-  MARKET: 'PİYASA',
+  'Stop Limit': 'Stop Limit',
+  'Stop Market': 'Stop Piyasa',
+  'Trigger Price': 'Tetik Fiyat',
   'Limit Price': 'Limit Fiyatı',
   Amount: 'Miktar',
+  'Reduce Only': 'Sadece Azalt',
+  'Reduce Only will increase position': 'Reduce Only pozisyonu artıracaktır',
   'Your order stays open until it is filled or you decide to cancel.':
     'Siparişiniz, doldurulana veya iptal etmeye karar verene kadar açık kalır.',
   'Your order gets filled right away, partially or fully, and whatever is left gets canceled instantly.':
     'Siparişiniz hemen, kısmen veya tamamen doldurulur ve kalan her şey anında iptal edilir.',
+  'Conditional limit order that serves to add liquidity to the order book as a Maker order.':
+    'Maker siparişi olarak sipariş defterine likidite eklemek için kullanılan koşullu limit sipariş.',
   Fee: 'Ücret',
   'Currently the fees are fixed and uniform across the platform. Maker {{makerFee}} / Taker {{takerFee}}':
     'Şu anda ücretler platform genelinde sabit ve uniform. Yapıcı {{makerFee}} / Alıcı {{takerFee}}',
@@ -128,6 +155,7 @@ const translations: Record<Keys, string> = {
   'Funding Payments': 'Fonlama Ödemeleri',
   Side: 'Taraf',
   'Entry Price': 'Giriş Fiyatı',
+  'Liquidation Price': 'Likitasyon Fiyatı',
   'Unrealized Funding': 'Gerçekleşmemiş Fonlama',
   'Close Position': 'Pozisyonu Kapat',
   Type: 'Tür',
@@ -234,8 +262,8 @@ const translations: Record<Keys, string> = {
   'Deposit to Paraclear available': 'Paraclear’a para yatırma mevcut',
   'Go to Deposits': 'Yatırımlara Git',
   'Deposit to Paraclear in progress': 'Paraclear’a para yatırma devam ediyor',
-  '<1>Paradex Closed Beta</1> This is a CLOSED BETA version of Paradex, the product is still being tested and can be subject to bugs and errors. For more details please read carefully the <2>Paradex terms of service</2> & <3>documentation</3>.':
-    '<1>Paradex Kapalı Beta</1> Bu, Paradex’in KAPALI BETA sürümüdür, ürün hala test ediliyor ve hatalara ve hatalara maruz kalabilir. Daha fazla detay için lütfen <2>Paradex hizmet şartları</2> & <3>dokümantasyonu</3> dikkatlice okuyun.',
+  '<1>Paradex Beta</1> This is a Beta version of Paradex, the product is still being tested and can be subject to bugs and errors. For more details please read carefully the <2>Paradex terms of service</2> & <3>documentation</3>.':
+    '<1>Paradex Beta</1> Bu, Paradex’in Beta sürümüdür, ürün hala test ediliyor ve hatalara ve hatalara tabi olabilir. Daha fazla ayrıntı için lütfen dikkatlice <2>Paradex hizmet şartlarını</2> ve <3>dokümantasyonu</3> okuyun.',
   'Limit {{side}} Order Fill': 'Limit {{side}} Sipariş Doldur',
   '{{type}} {{side}} Order Submitted': '{{type}} {{side}} Sipariş Gönderildi',
   '{{type}} {{side}} Order Canceled': '{{type}} {{side}} Sipariş İptal Edildi',
