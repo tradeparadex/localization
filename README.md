@@ -7,6 +7,7 @@ So that from the developer's perspective, we still write in plain English and no
 Currently supported languages are:
 
 ```ts
+  // ISO 639 language codes
   en: 'English',
   zh_Hans: '中文 (简体)',
   zh_Hant: '中文 (繁體)',
@@ -21,4 +22,6 @@ Currently supported languages are:
   tr: 'Türkçe',
   nl: 'Nederlands',
   id: 'Indonesia',
+  uk: 'Українська',
+  pl: 'Polski',
 ```
